@@ -15,12 +15,13 @@
         "contact": "Contact"
     },
     "hero": {
-        "title": "Legal Consultancy & Attorney Services",
-        "subtitle": "Professional legal solutions for individuals and corporations based in Ankara.",
+        "title": "Attorney İrem Aydın",
+        "subtitle": "Providing reliable and solution-oriented legal services in Ankaara for both individuals and corporate clients.",
         "breadcrumb": {
             "home": "Home",
-            "current": "About Us"
-        }
+            "current": "Home"
+        },
+        "ctaNote": "Message us now for a free initial consultation."
     },
     "footer": {
         "desc": "Providing reliable, transparent and solution-oriented legal services in Ankara for both individuals and corporate clients.",

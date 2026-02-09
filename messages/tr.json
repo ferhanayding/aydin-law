@@ -15,12 +15,13 @@
         "contact": "İletişim"
     },
     "hero": {
-        "title": "Hukuki Danışmanlık ve Avukatlık Hizmetleri",
-        "subtitle": "Ankara merkezli, bireysel ve kurumsal müvekkillere yönelik profesyonel hukuk çözümleri.",
+        "title": "Avukat İrem Aydın",
+        "subtitle": "Ankaara’da bireysel ve kurumsal müvekkiller için güvenilir ve çözüm odaklı hukuki danışmanlık hizmeti.",
         "breadcrumb": {
             "home": "Anasayfa",
-            "current": "Hakkımızda"
-        }
+            "current": "Ana Sayfa"
+        },
+        "ctaNote": "Ücretsiz ön görüşme için hemen yazın."
     },
     "footer": {
         "desc": "Ankara merkezli avukatlık hizmetleriyle bireysel ve kurumsal müvekkillerine güvenilir, şeffaf ve çözüm odaklı hukuki danışmanlık sunar.",

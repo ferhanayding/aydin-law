@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { MessageCircle } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -9,16 +10,33 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative flex items-end"
-      style={{
-        minHeight: 'calc(85vh - var(--header-height))',
-        paddingTop: 'var(--header-height)'
-      }}
+      className="relative overflow-hidden  md:min-h-[calc(95vh-var(--header-height))] pt-[var(--header-height)"
+
     >
       {/* BACKGROUND */}
-      <div className="absolute inset-0 grid">
+      <div className="my-6 md:hidden">
+        <Image
+          src="/images/atakuleanitkabir.png"
+          width={1200}
+          height={800}
+          alt="Ankara"
+          className="
+      w-full
+      h-30
+      object-cover
+    
+      
+    "
+        />
+      </div>
+      <div className="absolute inset-0 hidden md:block">
         <div
-          className="bg-cover bg-center"
+          className="
+      h-full w-full
+      bg-cover
+      bg-center
+      scale-105
+    "
           style={{
             backgroundImage: "url('/images/atakuleanitkabir.png')"
           }}
@@ -26,40 +44,95 @@ export default function Hero() {
       </div>
 
       {/* OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/80" />
+      <div className=" md:block absolute hidden inset-0 bg-black/70" />
 
       {/* CONTENT */}
-      <div className="relative z-10 container-custom pb-24">
+      <div className="
+        relative z-10
+        h-full
+        container-custom
+        flex
+        items-center
+        md:items-end
+        md:pb-16
+        md:pb-24
+        px-5
+        sm:px-8
+        lg:px-0
+      ">
 
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-          {t('title')}
-        </h1>
+        {/* TEXT WRAPPER */}
+        <div className="
+          w-full
+          max-w-md
+          md:max-w-xl
+          text-center
+          md:mt-20
+          md:text-left
+        ">
 
-        <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-8">
-          {t('subtitle')}
-        </p>
+          <h1 className="
+            text-3xl
+            sm:text-4xl
+            md:text-6xl
+            lg:text-7xl
+            font-bold
+            text-black md:text-white
+            mb-5
+            leading-tight
+          ">
+            {t('title')}
+          </h1>
 
-        {/* BREADCRUMB */}
-        <div className="text-sm text-white/70 mb-10">
-          {t('breadcrumb.home')} /{' '}
-          <span className="text-red-400 font-medium">
-            {t('breadcrumb.current')}
-          </span>
+          <p className="
+            text-sm
+            sm:text-base
+            md:text-xl
+            text-black/80 md:text-white/80
+            mb-7
+          ">
+            {t('subtitle')}
+          </p>
+
+          {/* CTA */}
+          <div className="
+            flex
+            flex-col
+            gap-4
+            sm:items-center
+            md:items-start
+          ">
+
+            <a
+              href="https://wa.me/905XXXXXXXXX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                inline-flex items-center justify-center gap-3
+                bg-[rgb(var(--color-accent))]
+                text-[rgb(var(--color-primary))]
+                px-6 py-4
+                rounded-full
+                font-semibold
+                shadow-xl
+                hover:scale-105 transition-all
+                w-full
+                sm:w-auto
+              "
+            >
+              <MessageCircle className="w-5 h-5" />
+              WhatsApp’tan İletişime Geç
+            </a>
+
+            <span className="text-black/60 md:text-white/60 text-xs sm:text-sm">
+              {t('ctaNote')}
+            </span>
+
+          </div>
+
         </div>
 
       </div>
-
-      {/* WHATSAPP BUTTON */}
-      <a
-        href="https://wa.me/905XXXXXXXXX"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-xl transition-all hover:scale-105"
-      >
-        <MessageCircle className="w-5 h-5" />
-        WhatsApp
-      </a>
-
     </section>
   );
 }
