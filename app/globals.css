@@ -1,26 +1,72 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: 15 23 42;
+  /* Navy */
+  --color-accent: 178 124 26;
+  /* Gold */
+  --color-accent-light: 200 155 72;
+  /* Light Gold */
+  --header-height: 50px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ---------- BASE ---------- */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  button {
+
+    cursor: pointer;
+  }
+
+  a {
+    cursor: pointer;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(17 24 39);
+  background: white;
+}
+
+/* ---------- DESIGN SYSTEM ---------- */
+
+.section-padding {
+  padding: 7rem 1.5rem;
+}
+
+.container-custom {
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+.bg-primary {
+  background-color: rgb(var(--color-primary));
+}
+
+.bg-accent {
+  background-color: rgb(var(--color-accent));
+}
+
+.text-accent {
+  color: rgb(var(--color-accent));
+}
+
+.text-accent-light {
+  color: rgb(var(--color-accent-light));
+}
+
+/* Buttons */
+
+.btn-primary {
+  background: rgb(var(--color-accent));
+  color: rgb(var(--color-primary));
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgb(var(--color-accent) / 0.3);
 }

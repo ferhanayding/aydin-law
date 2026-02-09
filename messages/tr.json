@@ -1,0 +1,39 @@
+{
+    "about": {
+        "title": "Hakkımda",
+        "desc": "Avukat İrem Aydın, Trabzon’da bireysel ve kurumsal müvekkillerine etik, şeffaf ve çözüm odaklı hukuki danışmanlık sunmaktadır. Akademik altyapısı ve saha tecrübesiyle her dosyaya titizlikle yaklaşır.",
+        "points": {
+            "1": "Bireysel danışmanlık ve dava takibi",
+            "2": "Şirketlere yönelik hukuki destek",
+            "3": "Gizlilik ve mesleki etik ilkelerine bağlılık"
+        }
+    },
+    "nav": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımda",
+        "services": "Hizmetler",
+        "contact": "İletişim"
+    },
+    "hero": {
+        "title": "Hukuki Danışmanlık ve Avukatlık Hizmetleri",
+        "subtitle": "Ankara merkezli, bireysel ve kurumsal müvekkillere yönelik profesyonel hukuk çözümleri.",
+        "breadcrumb": {
+            "home": "Anasayfa",
+            "current": "Hakkımızda"
+        }
+    },
+    "footer": {
+        "desc": "Ankara merkezli avukatlık hizmetleriyle bireysel ve kurumsal müvekkillerine güvenilir, şeffaf ve çözüm odaklı hukuki danışmanlık sunar.",
+        "links": {
+            "title": "Hızlı Erişim",
+            "home": "Anasayfa",
+            "about": "Hakkımda",
+            "services": "Hizmetler",
+            "contact": "İletişim"
+        },
+        "contact": {
+            "title": "İletişim"
+        },
+        "rights": "Tüm hakları saklıdır."
+    }
+}

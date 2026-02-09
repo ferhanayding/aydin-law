@@ -1,0 +1,39 @@
+{
+    "about": {
+        "title": "About Me",
+        "desc": "Attorney Irem Aydin provides ethical, transparent and solution-oriented legal consultancy to individual and corporate clients in Trabzon. She approaches every case with academic discipline and practical experience.",
+        "points": {
+            "1": "Individual legal consultancy and litigation",
+            "2": "Corporate legal advisory services",
+            "3": "Strict commitment to confidentiality and professional ethics"
+        }
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Legal Consultancy & Attorney Services",
+        "subtitle": "Professional legal solutions for individuals and corporations based in Ankara.",
+        "breadcrumb": {
+            "home": "Home",
+            "current": "About Us"
+        }
+    },
+    "footer": {
+        "desc": "Providing reliable, transparent and solution-oriented legal services in Ankara for both individuals and corporate clients.",
+        "links": {
+            "title": "Quick Links",
+            "home": "Home",
+            "about": "About",
+            "services": "Services",
+            "contact": "Contact"
+        },
+        "contact": {
+            "title": "Contact"
+        },
+        "rights": "All rights reserved."
+    }
+}
