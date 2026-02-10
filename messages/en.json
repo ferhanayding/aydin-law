@@ -1,11 +1,11 @@
 {
     "about": {
-        "title": "About Me",
-        "desc": "Attorney Irem Aydin provides ethical, transparent and solution-oriented legal consultancy to individual and corporate clients in Trabzon. She approaches every case with academic discipline and practical experience.",
+        "title": "About",
+        "desc": "İrem Aydın is an attorney with international experience in sports, energy, and commercial law. As the founder of Aydın Law & Consulting, she delivers strategic and results-driven legal advisory services focused on contract management, negotiations, and regulatory compliance.",
         "points": {
-            "1": "Individual legal consultancy and litigation",
-            "2": "Corporate legal advisory services",
-            "3": "Strict commitment to confidentiality and professional ethics"
+            "1": "Contract drafting, negotiation, and regulatory compliance in sports and commercial law",
+            "2": "Cross-border transactions, risk assessment, and operational development",
+            "3": "Client relations, project management, and business-oriented legal solutions"
         }
     },
     "nav": {

@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { MessageCircle } from 'lucide-react';
 import Image from 'next/image';
+import Divider from './divider';
 
 export default function Hero() {
   const t = useTranslations('hero');
@@ -55,7 +56,7 @@ export default function Hero() {
         items-center
         md:items-end
         md:pb-16
-        md:pb-24
+     
         px-5
         sm:px-8
         lg:px-0
@@ -110,7 +111,7 @@ export default function Hero() {
               className="
                 inline-flex items-center justify-center gap-3
                 bg-[rgb(var(--color-accent))]
-                text-[rgb(var(--color-primary))]
+               
                 px-6 py-4
                 rounded-full
                 font-semibold
@@ -118,9 +119,10 @@ export default function Hero() {
                 hover:scale-105 transition-all
                 w-full
                 sm:w-auto
+                text-white
               "
             >
-              <MessageCircle className="w-5 h-5" />
+              <MessageCircle className="w-5 h-5 " />
               WhatsApp’tan İletişime Geç
             </a>
 
@@ -133,6 +135,8 @@ export default function Hero() {
         </div>
 
       </div>
+      <Divider className="md:bg-white  bg-[rgb(var(--color-accent))]" />
+
     </section>
   );
 }

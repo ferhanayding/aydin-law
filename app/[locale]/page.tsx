@@ -6,9 +6,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      {/* <About />
-      <Services />
-      <Contact /> */}
+      <About />
+      {/* <Services /> */}
+      <Contact />
     </>
   );
 }

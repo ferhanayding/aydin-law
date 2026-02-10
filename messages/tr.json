@@ -1,11 +1,11 @@
 {
     "about": {
         "title": "Hakkımda",
-        "desc": "Avukat İrem Aydın, Trabzon’da bireysel ve kurumsal müvekkillerine etik, şeffaf ve çözüm odaklı hukuki danışmanlık sunmaktadır. Akademik altyapısı ve saha tecrübesiyle her dosyaya titizlikle yaklaşır.",
+        "desc": "İrem Aydın, spor, enerji ve ticaret hukuku alanlarında uluslararası deneyime sahip bir avukattır. Kurucusu olduğu Aydın Law & Consulting bünyesinde; sözleşme yönetimi, müzakere süreçleri ve regülasyon uyumu konularında müvekkillerine stratejik ve sonuç odaklı hukuki danışmanlık sunmaktadır.",
         "points": {
-            "1": "Bireysel danışmanlık ve dava takibi",
-            "2": "Şirketlere yönelik hukuki destek",
-            "3": "Gizlilik ve mesleki etik ilkelerine bağlılık"
+            "1": "Spor ve ticaret hukuku alanlarında sözleşme hazırlama, müzakere ve uyum süreçleri",
+            "2": "Uluslararası işlemler, risk analizi ve operasyonel süreç geliştirme",
+            "3": "Müvekkil ilişkileri, proje yönetimi ve iş odaklı hukuki çözümler"
         }
     },
     "nav": {
