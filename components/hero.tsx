@@ -110,8 +110,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="
                 inline-flex items-center justify-center gap-3
-                bg-[rgb(var(--color-accent))]
-               
+                bg-footer
                 px-6 py-4
                 rounded-full
                 font-semibold

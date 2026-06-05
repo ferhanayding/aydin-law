@@ -10,7 +10,7 @@
     },
     "nav": {
         "home": "Ana Sayfa",
-        "about": "Hakkımda",
+        "about": "Hakkımızda",
         "services": "Hizmetler",
         "contact": "İletişim"
     },
@@ -21,7 +21,7 @@
             "home": "Anasayfa",
             "current": "Ana Sayfa"
         },
-        "ctaNote": "Ücretsiz ön görüşme için hemen yazın."
+        "ctaNote": "Ön görüşme için hemen yazın."
     },
     "footer": {
         "desc": "Ankara merkezli avukatlık hizmetleriyle bireysel ve kurumsal müvekkillerine güvenilir, şeffaf ve çözüm odaklı hukuki danışmanlık sunar.",

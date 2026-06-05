@@ -14,7 +14,7 @@ export default function Header() {
       <div className="container-custom flex items-center justify-between h-(--header-height)">
 
         {/* LOGO */}
-        <div className="font-extrabold text-xl w-full tracking-tight text-primary flex items-center gap-2">
+        <div className="font-extrabold text-xl w-full tracking-tight text-footer  flex items-center gap-2">
           Av. İrem Aydın
         </div>
 
@@ -24,8 +24,7 @@ export default function Header() {
             <a
               key={item}
               href={`#${item}`}
-              className="relative text-primary hover:text-[rgb(var(--color-accent-light))]    "
-            >
+              className="relative text-primary transition-colors duration-300 hover:text-[#A5737D]"            >
               {t(item)}
             </a>
           ))}
@@ -112,7 +111,7 @@ function LanguageSwitcher() {
       <button
         onClick={() => changeLocale('tr')}
         className={`px-2 py-0.5 rounded-md transition ${locale === 'tr'
-          ? 'bg-accent text-white'
+          ? 'bg-footer text-white'
           : 'hover:text-accent'
           }`}
       >
@@ -124,7 +123,7 @@ function LanguageSwitcher() {
       <button
         onClick={() => changeLocale('en')}
         className={`px-2 py-0.5 rounded-md transition ${locale === 'en'
-          ? 'bg-accent text-white'
+          ? 'bg-footer text-white'
           : 'hover:text-accent'
           }`}
       >

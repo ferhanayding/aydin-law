@@ -5,13 +5,13 @@ export default function Footer() {
   const t = useTranslations('footer');
 
   return (
-    <footer className="bg-[rgb(var(--color-primary))] text-white mt-32">
+    <footer className="bg-[rgb(var(--color-footer))] text-white mt-32">
       <div className="container-custom py-20 grid gap-12 md:grid-cols-3">
 
         {/* BRAND */}
         <div>
           <div className="flex items-center gap-3 font-bold text-2xl mb-5">
-            <Scale className="text-[rgb(var(--color-accent))]" />
+            <Scale className="" />
             Av. İrem Aydın
           </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
 
         {/* LINKS */}
         <div>
-          <h4 className="font-semibold mb-5 text-[rgb(var(--color-accent))]">
+          <h4 className="font-semibold mb-5 text-white">
             {t('links.title')}
           </h4>
 
@@ -31,7 +31,7 @@ export default function Footer() {
               <li key={item}>
                 <a
                   href={`#${item}`}
-                  className="relative inline-block transition hover:text-[rgb(var(--color-accent))]
+                  className="relative inline-block transition hover:
                   after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0
                   after:bg-[rgb(var(--color-accent))] after:transition-all hover:after:w-full"
                 >
@@ -44,23 +44,23 @@ export default function Footer() {
 
         {/* CONTACT */}
         <div>
-          <h4 className="font-semibold mb-5 text-[rgb(var(--color-accent))]">
+          <h4 className="font-semibold mb-5 ">
             {t('contact.title')}
           </h4>
 
           <ul className="space-y-4 text-white/80">
             <li className="flex items-center gap-3">
-              <Phone size={18} className="text-[rgb(var(--color-accent))]" />
+              <Phone size={18} className="" />
               <span>+90 555 123 45 67</span>
             </li>
 
             <li className="flex items-center gap-3">
-              <Mail size={18} className="text-[rgb(var(--color-accent))]" />
+              <Mail size={18} className="" />
               <span>info@iremavukat.com</span>
             </li>
 
             <li className="flex items-center gap-3">
-              <MapPin size={18} className="text-[rgb(var(--color-accent))]" />
+              <MapPin size={18} className="" />
               <span>Trabzon, Türkiye</span>
             </li>
           </ul>

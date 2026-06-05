@@ -3,11 +3,12 @@
 :root {
   --color-primary: 15 23 42;
   /* Navy */
-  --color-accent: 178 124 26;
+  --color-accent: 199 154 107;
   /* Gold */
   --color-accent-light: 200 155 72;
   /* Light Gold */
   --header-height: 50px;
+  --color-footer:165 115 125;
 }
 
 /* ---------- BASE ---------- */
@@ -46,7 +47,15 @@ body {
 .bg-accent {
   background-color: rgb(var(--color-accent));
 }
-
+.text-primary {
+  color: rgb(var(--color-primary));
+}
+.text-footer {
+  color: rgb(var(--color-footer));
+}
+.bg-footer {
+  background-color: rgb(var(--color-footer));
+}
 .text-accent {
   color: rgb(var(--color-accent));
 }
@@ -69,4 +78,7 @@ body {
 .btn-primary:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 40px rgb(var(--color-accent) / 0.3);
+}
+.font-garamond {
+  font-family: var(--font-garamond);
 }
