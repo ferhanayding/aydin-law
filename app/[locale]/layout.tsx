@@ -33,7 +33,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={garamond.className}>
-      <body className="min-h-dvh bg-white text-neutral-900 antialiased">
+      <body className="min-h-dvh bg-gray-50 text-neutral-900 antialiased">
         <NextIntlClientProvider messages={messages} locale={locale}>
           <Header />
           <FloatingSocials />

@@ -1,11 +1,17 @@
 {
     "about": {
-        "title": "Hakkımda",
-        "desc": "İrem Aydın, spor, enerji ve ticaret hukuku alanlarında uluslararası deneyime sahip bir avukattır. Kurucusu olduğu Aydın Law & Consulting bünyesinde; sözleşme yönetimi, müzakere süreçleri ve regülasyon uyumu konularında müvekkillerine stratejik ve sonuç odaklı hukuki danışmanlık sunmaktadır.",
+        "badge": "Kurucu Avukat",
+        "title": "Av. İrem Aydın",
+        "desc": "Aydın Law & Consulting'in kurucusu olan Av. İrem Aydın, spor hukuku, ticaret hukuku, enerji hukuku ve sözleşme yönetimi alanlarında faaliyet göstermektedir. Ulusal ve uluslararası projelerde edindiği deneyimle müvekkillerine stratejik ve çözüm odaklı hukuki danışmanlık sunmaktadır.",
+        "educationTitle": "Eğitim",
+        "education": "TOBB ETÜ Hukuk Fakültesi • ISDE Law Business School (FC Barcelona) Spor Yönetimi ve Hukuki Beceriler Yüksek Lisansı",
+        "experienceTitle": "Deneyim",
+        "experience": "3+ yıllık uluslararası deneyim ve kurumsal danışmanlık geçmişi",
         "points": {
-            "1": "Spor ve ticaret hukuku alanlarında sözleşme hazırlama, müzakere ve uyum süreçleri",
-            "2": "Uluslararası işlemler, risk analizi ve operasyonel süreç geliştirme",
-            "3": "Müvekkil ilişkileri, proje yönetimi ve iş odaklı hukuki çözümler"
+            "1": "Spor hukuku ve sponsorluk sözleşmeleri",
+            "2": "Ticaret hukuku ve şirket danışmanlığı",
+            "3": "Enerji hukuku ve düzenleyici uyum süreçleri",
+            "4": "Sözleşme hazırlama, müzakere ve risk yönetimi"
         }
     },
     "nav": {
@@ -16,7 +22,7 @@
     },
     "hero": {
         "title": "Avukat İrem Aydın",
-        "subtitle": "Ankaara’da bireysel ve kurumsal müvekkiller için güvenilir ve çözüm odaklı hukuki danışmanlık hizmeti.",
+        "subtitle": "Ankara’da bireysel ve kurumsal müvekkiller için güvenilir ve çözüm odaklı hukuki danışmanlık hizmeti.",
         "breadcrumb": {
             "home": "Anasayfa",
             "current": "Ana Sayfa"
@@ -36,5 +42,79 @@
             "title": "İletişim"
         },
         "rights": "Tüm hakları saklıdır."
+    },
+    "contact": {
+        "badge": "İletişim",
+        "title": "Hukuki Destek İçin Bize Ulaşın",
+        "subtitle": "Spor hukuku, ticaret hukuku, enerji hukuku ve sözleşme danışmanlığı alanlarında profesyonel hukuki destek almak için bizimle iletişime geçebilirsiniz. Her talep titizlikle değerlendirilmekte ve ihtiyaçlarınıza özel çözümler sunulmaktadır.",
+        "infoTitle": "İletişim Bilgileri",
+        "phone": "Telefon",
+        "email": "E-Posta",
+        "location": "Konum",
+        "company": "Aydın Law & Consulting",
+        "ctaTitle": "İlk Adımı Atın",
+        "ctaText": "Hukuki süreçlerinizde profesyonel destek almak, danışmanlık talebinde bulunmak veya iş birliği fırsatlarını değerlendirmek için bizimle iletişime geçebilirsiniz.",
+        "button": "WhatsApp'tan İletişime Geç",
+        "note": "Tüm görüşmeler gizlilik ilkesi ve meslek kuralları çerçevesinde yürütülmektedir."
+    },
+    "services": {
+        "badge": "Uzmanlık Alanları",
+        "title": "Hizmetlerimiz",
+        "subtitle": "Müvekkillerimize farklı sektörlerde stratejik ve çözüm odaklı hukuki danışmanlık hizmetleri sunuyoruz.",
+        "sportsLaw": {
+            "title": "Spor Hukuku",
+            "description": "Sporcular, kulüpler, menajerlik şirketleri ve spor organizasyonlarına yönelik sözleşme yönetimi, sponsorluk anlaşmaları ve hukuki danışmanlık hizmetleri."
+        },
+        "commercialLaw": {
+            "title": "Ticaret ve Şirketler Hukuku",
+            "description": "Şirket kuruluşları, ticari faaliyetler, kurumsal yapılandırmalar ve ticari uyuşmazlıklara ilişkin hukuki destek."
+        },
+        "contractManagement": {
+            "title": "Sözleşme Yönetimi",
+            "description": "Sözleşmelerin hazırlanması, incelenmesi, müzakere edilmesi ve hukuki risklerin değerlendirilmesi."
+        },
+        "energyLaw": {
+            "title": "Enerji Hukuku",
+            "description": "Enerji projeleri, lisans süreçleri, düzenleyici uyum ve sektörel sözleşmelere ilişkin hukuki danışmanlık."
+        },
+        "dataProtection": {
+            "title": "KVKK ve Veri Koruma",
+            "description": "Kişisel verilerin korunması mevzuatına uyum süreçleri ve veri koruma politikalarının oluşturulması."
+        },
+        "internationalLaw": {
+            "title": "Uluslararası Ticari İşlemler",
+            "description": "Sınır ötesi ticari faaliyetler, uluslararası sözleşmeler ve yabancı yatırım süreçlerinde hukuki destek."
+        }
+    },
+    "whyUs": {
+        "badge": "Neden Biz",
+        "title": "Neden Aydın Law & Consulting?",
+        "subtitle": "Hukuki süreçlerinizi yalnızca yasal açıdan değil, stratejik ve ticari açıdan da değerlendiriyoruz.",
+        "items": {
+            "1": {
+                "title": "Müvekkil Odaklı Yaklaşım",
+                "description": "Her müvekkilin ihtiyaçlarına özel çözümler geliştiriyor ve süreçleri bireysel olarak yönetiyoruz."
+            },
+            "2": {
+                "title": "Uluslararası Deneyim",
+                "description": "Uluslararası projeler ve sınır ötesi işlemlerden edinilmiş tecrübeyle hizmet sunuyoruz."
+            },
+            "3": {
+                "title": "Şeffaf İletişim",
+                "description": "Süreç boyunca açık, anlaşılır ve güvenilir iletişim kurmaya önem veriyoruz."
+            },
+            "4": {
+                "title": "Güçlü Sözleşme Yönetimi",
+                "description": "Sözleşmelerin hazırlanması, müzakeresi ve uygulanmasında kapsamlı destek sağlıyoruz."
+            },
+            "5": {
+                "title": "Risk Yönetimi",
+                "description": "Olası hukuki riskleri önceden tespit ederek koruyucu çözümler geliştiriyoruz."
+            },
+            "6": {
+                "title": "Ticari Bakış Açısı",
+                "description": "Hukuki danışmanlığı iş hedefleri ve ticari gerçeklerle uyumlu şekilde sunuyoruz."
+            }
+        }
     }
 }

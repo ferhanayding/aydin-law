@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden  md:min-h-[calc(95vh-var(--header-height))] pt-[var(--header-height)"
+      className="relative bg-gray-50 overflow-hidden  md:min-h-[calc(95vh-var(--header-height))] pt-[var(--header-height)"
 
     >
       {/* BACKGROUND */}
@@ -134,7 +134,7 @@ export default function Hero() {
         </div>
 
       </div>
-      <Divider className="md:bg-white  bg-[rgb(var(--color-accent))]" />
+      <Divider className="md:bg-gray-50  bg-[rgb(var(--color-accent))]" />
 
     </section>
   );

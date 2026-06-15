@@ -10,7 +10,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 px-5   inset-x-0 z-50 bg-white/90 border-b border-white/10">
+    <header className="fixed top-0 px-5 inset-x-0 z-50 bg-gray-50 border-b border-white/10">
       <div className="container-custom flex items-center justify-between h-(--header-height)">
 
         {/* LOGO */}
