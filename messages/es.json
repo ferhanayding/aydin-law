@@ -1,0 +1,120 @@
+{
+    "about": {
+        "badge": "Abogada Fundadora",
+        "title": "Abogada İrem Aydín",
+        "desc": "Como fundadora de Aydín Law & Consulting, la Abogada İrem Aydín se especializa en derecho deportivo, derecho comercial, derecho energético y gestión de contratos. Aprovechando la experiencia adquirida en proyectos nacionales e internacionales, proporciona asesoramiento legal estratégico y orientado a soluciones adaptado a las necesidades de sus clientes.",
+        "educationTitle": "Educación",
+        "education": "Facultad de Derecho de la Universidad de Economía y Tecnología TOBB • Máster en Gestión Deportiva y Habilidades Legales, ISDE Law Business School (FC Barcelona)",
+        "experienceTitle": "Experiencia",
+        "experience": "3+ años de experiencia internacional y antecedentes de consultoría legal corporativa",
+        "points": {
+            "1": "Derecho deportivo y acuerdos de patrocinio",
+            "2": "Asesoramiento comercial y de derecho corporativo",
+            "3": "Derecho energético y procesos de cumplimiento normativo",
+            "4": "Redacción, negociación y gestión de riesgos de contratos"
+        }
+    },
+    "nav": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "services": "Servicios",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "title": "Abogada İrem Aydín",
+        "subtitle": "Proporcionando servicios legales confiables y orientados a soluciones en Ankara para clientes individuales y corporativos.",
+        "breadcrumb": {
+            "home": "Inicio",
+            "current": "Inicio"
+        },
+        "ctaNote": "Contáctenos ahora para una consulta inicial."
+    },
+    "footer": {
+        "desc": "Proporcionando servicios legales confiables, transparentes y orientados a soluciones en Ankara para clientes individuales y corporativos.",
+        "links": {
+            "title": "Enlaces Rápidos",
+            "home": "Inicio",
+            "about": "Acerca de",
+            "services": "Servicios",
+            "contact": "Contacto"
+        },
+        "contact": {
+            "title": "Contacto"
+        },
+        "rights": "Todos los derechos reservados."
+    },
+    "contact": {
+        "badge": "Contacto",
+        "title": "Obtenga Apoyo Legal Profesional",
+        "subtitle": "Contáctenos para obtener asistencia legal profesional en derecho deportivo, derecho comercial, derecho energético y servicios de consultoría de contratos. Cada consulta se revisa cuidadosamente y se proporcionan soluciones adaptadas según sus necesidades.",
+        "infoTitle": "Información de Contacto",
+        "phone": "Teléfono",
+        "email": "Correo Electrónico",
+        "location": "Ubicación",
+        "company": "Aydín Law & Consulting",
+        "ctaTitle": "Dé el Primer Paso",
+        "ctaText": "Puede contactarnos para obtener apoyo profesional en sus procesos legales, solicitar asesoramiento o evaluar oportunidades de colaboración.",
+        "button": "Contáctenos por WhatsApp",
+        "note": "Todas las consultas se llevan a cabo bajo los principios de confidencialidad y los códigos de conducta profesional."
+    },
+    "services": {
+        "badge": "Áreas de Especialización",
+        "title": "Nuestros Servicios",
+        "subtitle": "Proporcionamos servicios de asesoramiento legal estratégico y orientado a soluciones a nuestros clientes en diversos sectores.",
+        "sportsLaw": {
+            "title": "Derecho Deportivo",
+            "description": "Gestión de contratos, acuerdos de patrocinio y servicios de asesoramiento legal para atletas, clubes, empresas de representación y organizaciones deportivas."
+        },
+        "commercialLaw": {
+            "title": "Derecho Mercantil y Corporativo",
+            "description": "Apoyo legal para constitución de empresas, actividades comerciales, estructuras corporativas y disputas comerciales."
+        },
+        "contractManagement": {
+            "title": "Gestión de Contratos",
+            "description": "Redacción, revisión, negociación de contratos y evaluación de riesgos legales."
+        },
+        "energyLaw": {
+            "title": "Derecho Energético",
+            "description": "Asesoramiento legal para proyectos energéticos, procesos de licencias, cumplimiento normativo y contratos sectoriales."
+        },
+        "dataProtection": {
+            "title": "Protección de Datos y KVKK",
+            "description": "Procesos de cumplimiento de regulaciones de protección de datos personales y elaboración de políticas de protección de datos."
+        },
+        "internationalLaw": {
+            "title": "Transacciones Comerciales Internacionales",
+            "description": "Apoyo legal en actividades comerciales transfronterizas, contratos internacionales y procesos de inversión extranjera."
+        }
+    },
+    "whyUs": {
+        "badge": "Por Qué Nosotros",
+        "title": "¿Por Qué Aydín Law & Consulting?",
+        "subtitle": "Evaluamos sus procesos legales no solo desde una perspectiva legal, sino también estratégica y comercial.",
+        "items": {
+            "1": {
+                "title": "Enfoque Centrado en el Cliente",
+                "description": "Desarrollamos soluciones personalizadas para las necesidades de cada cliente y gestionamos los procesos de forma individual."
+            },
+            "2": {
+                "title": "Experiencia Internacional",
+                "description": "Proporcionamos servicios con experiencia adquirida en proyectos internacionales y transacciones transfronterizas."
+            },
+            "3": {
+                "title": "Comunicación Transparente",
+                "description": "Valoramos la comunicación clara, comprensible y confiable durante todo el proceso."
+            },
+            "4": {
+                "title": "Gestión Sólida de Contratos",
+                "description": "Proporcionamos apoyo integral en la redacción, negociación e implementación de contratos."
+            },
+            "5": {
+                "title": "Gestión de Riesgos",
+                "description": "Identificamos riesgos legales potenciales de antemano y desarrollamos soluciones preventivas."
+            },
+            "6": {
+                "title": "Perspectiva Comercial",
+                "description": "Proporcionamos asesoramiento legal alineado con objetivos comerciales y realidades empresariales."
+            }
+        }
+    }
+}

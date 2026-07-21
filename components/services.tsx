@@ -48,10 +48,10 @@ export default function Services() {
 
   return (<section
     id="services"
-    className="py-24 bg-gray-50"
+    className="md:py-24 bg-gray-50"
   > <div className="container-custom px-5 sm:px-8 lg:px-0">
 
-      ```
+
       <div className="max-w-3xl mx-auto text-center mb-16">
         <span className="text-sm uppercase tracking-[0.3em] text-[rgb(var(--color-accent))] font-semibold">
           {t('badge')}

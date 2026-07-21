@@ -1,12 +1,10 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import { MessageCircle } from 'lucide-react';
+
 import Image from 'next/image';
 import Divider from './divider';
 
 export default function Hero() {
-  const t = useTranslations('hero');
 
   return (
     <section
@@ -15,19 +13,16 @@ export default function Hero() {
 
     >
       {/* BACKGROUND */}
-      <div className="my-6 md:hidden">
+      <div className="mb-10 md:hidden">
         <Image
-          src="/images/atakuleanitkabir.png"
+          src="/images/featured.png"
           width={1200}
           height={800}
           alt="Ankara"
           className="
-      w-full
-      h-30
-      object-cover
-    
-      
-    "
+         w-full
+         h-40
+        object-cover"
         />
       </div>
       <div className="absolute inset-0 hidden md:block">
@@ -39,13 +34,12 @@ export default function Hero() {
       scale-105
     "
           style={{
-            backgroundImage: "url('/images/atakuleanitkabir.png')"
+            backgroundImage: "url('/images/featured.png')"
           }}
         />
       </div>
 
       {/* OVERLAY */}
-      <div className=" md:block absolute hidden inset-0 bg-black/70" />
 
       {/* CONTENT */}
       <div className="
@@ -72,36 +66,18 @@ export default function Hero() {
           md:text-left
         ">
 
-          <h1 className="
-            text-3xl
-            sm:text-4xl
-            md:text-6xl
-            lg:text-7xl
-            font-bold
-            text-black md:text-white
-            mb-5
-            leading-tight
-          ">
-            {t('title')}
-          </h1>
 
-          <p className="
-            text-sm
-            sm:text-base
-            md:text-xl
-            text-black/80 md:text-white/80
-            mb-7
-          ">
-            {t('subtitle')}
-          </p>
 
           {/* CTA */}
-          <div className="
+          {/* <div className="
             flex
             flex-col
             gap-4
             sm:items-center
             md:items-start
+            md:absolute
+            md:bottom-8
+            md:left-8
           ">
 
             <a
@@ -125,11 +101,9 @@ export default function Hero() {
               WhatsApp’tan İletişime Geç
             </a>
 
-            <span className="text-black/60 md:text-white/60 text-xs sm:text-sm">
-              {t('ctaNote')}
-            </span>
 
-          </div>
+
+          </div> */}
 
         </div>
 

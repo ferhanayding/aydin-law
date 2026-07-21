@@ -14,17 +14,29 @@ export default function Header() {
       <div className="container-custom flex items-center justify-between h-(--header-height)">
 
         {/* LOGO */}
-        <div className="font-extrabold text-xl w-full tracking-tight text-footer  flex items-center gap-2">
-          Av. İrem Aydın
+        <div className="font-extrabold text-xl tracking-tight text-footer 
+         flex items-center gap-2">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="flex items-center gap-2 hover:opacity-80 transition"
+          >
+            <span>
+
+              Av. İrem Aydın
+            </span>
+          </button>
         </div>
 
         {/* DESKTOP NAV */}
-        <nav className="hidden lg:flex items-center justify-end md:pr-50 w-full gap-10 text-sm font-medium ">
+        <nav className="hidden lg:flex  items-center justify-end gap-10 text-sm font-medium ">
           {['home', 'about', 'services', 'contact'].map((item) => (
             <a
               key={item}
               href={`#${item}`}
-              className="relative text-primary transition-colors duration-300 hover:text-[#A5737D]"            >
+              className="relative text-primary transition-colors duration-300
+               hover:text-footer after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-footer after:transition-all hover:after:w-full"
+            >
+
               {t(item)}
             </a>
           ))}
@@ -50,29 +62,17 @@ export default function Header() {
 
       {/* MOBILE MENU */}
       {open && (
-        <div className="lg:hidden absolute top-0 left-0 w-full bg-primary border-t p-4 border-white/10 ">
-          <div className='flex items-center justify-between '>
+        <div className="lg:hidden absolute top-full left-0 w-full bg-footer border-t border-white/10 p-4">
 
-            <div className="font-extrabold text-xl w-full tracking-tight text-white flex items-center gap-2">
-              Av. İrem Aydın
-            </div>
-            <button
-              onClick={() => setOpen(false)}
-              className="lg:hidden block text-black p-2 rounded-lg hover:bg-white/10 transition"
-            >
-              <X color='white' size={22} />
-            </button>
+          <div className=" flex flex-col gap-4  border-white/10">
 
-          </div>
-          <div className="container-custom py-6 flex flex-col justify-end w-full text-right  gap-6">
-
-            <nav className="flex flex-col gap-4 text-accent">
+            <nav className="flex flex-col gap-3">
               {['home', 'about', 'services', 'contact'].map((item) => (
                 <a
                   key={item}
                   href={`#${item}`}
                   onClick={() => setOpen(false)}
-                  className="text-lg text-accent-light font-mono transition  border-white/10 border-b "
+                  className="text-base text-white hover:text-white/80 transition font-medium"
                 >
                   {t(item)}
                 </a>
@@ -80,7 +80,7 @@ export default function Header() {
             </nav>
 
             {/* MOBILE LANG */}
-            <div className="pt-4  flex justify-end ">
+            <div className="pt-2 border-t border-white/10">
               <LanguageSwitcher />
             </div>
           </div>
@@ -128,6 +128,18 @@ function LanguageSwitcher() {
           }`}
       >
         EN
+      </button>
+
+      <span className="text-black/30">|</span>
+
+      <button
+        onClick={() => changeLocale('es')}
+        className={`px-2 py-0.5 rounded-md transition ${locale === 'es'
+          ? 'bg-footer text-white'
+          : 'hover:text-accent'
+          }`}
+      >
+        ES
       </button>
     </div>
   );

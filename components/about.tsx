@@ -7,7 +7,7 @@ export default function About() {
   const t = useTranslations('about');
 
   return (
-    <section className="section-padding bg-footer">
+    <section className="section-padding bg-footer" id="about">
       <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
 

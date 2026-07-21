@@ -90,7 +90,7 @@ export default function WhyChooseUs() {
                                 className="
                 w-14 h-14
                 rounded-2xl
-                bg-[rgb(var(--color-accent))]
+                bg-[rgb(var(--color-footer))]
                 flex items-center justify-center
                 mb-5
               "
