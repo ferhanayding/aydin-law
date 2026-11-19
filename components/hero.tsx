@@ -1,115 +1,73 @@
-'use client';
+import { getImageProps } from "next/image";
+import { useTranslations } from "next-intl";
+import { ArrowUpRight } from "lucide-react";
+import { site } from "@/lib/site";
 
-
-import Image from 'next/image';
-import Divider from './divider';
-
+/**
+ * Tam ekran hero: Anıtkabir, Atakule ve logo görseli.
+ * Görsel hiçbir ekranda kırpılmaz: alana sığacak en büyük boyutta ortalanır,
+ * kenarları görselin kendi gece rengine (#00050e → #010103) yumuşakça karışır.
+ * Yatay ekranda geniş banner (featured.png), dikey ekranda aynı tasarımın
+ * 3:2 versiyonu (featured.jpeg) gösterilir.
+ */
 export default function Hero() {
+  const t = useTranslations("hero");
+
+  const common = { alt: t("imageAlt"), sizes: "100vw", priority: true };
+  const {
+    props: { srcSet: portraitSrcSet },
+  } = getImageProps({ ...common, src: "/images/featured.jpeg", width: 1536, height: 1024 });
+  const { props: landscape } = getImageProps({ ...common, src: "/images/featured.png", width: 1844, height: 853 });
 
   return (
     <section
       id="home"
-      className="relative bg-gray-50 overflow-hidden  md:min-h-[calc(95vh-var(--header-height))] pt-[var(--header-height)"
-
+      aria-labelledby="hero-title"
+      className="relative flex h-[calc(100svh-var(--header-height))] min-h-[32rem] flex-col bg-gradient-to-b from-[#00050e] to-[#010103] text-white"
     >
-      {/* BACKGROUND */}
-      <div className="mb-10 md:hidden">
-        <Image
-          src="/images/featured.png"
-          width={1200}
-          height={800}
-          alt="Ankara"
-          className="
-         w-full
-         h-40
-        object-cover"
-        />
-      </div>
-      <div className="absolute inset-0 hidden md:block">
-        <div
-          className="
-      h-full w-full
-      bg-cover
-      bg-center
-      scale-105
-    "
-          style={{
-            backgroundImage: "url('/images/featured.png')"
-          }}
-        />
+      <h1 id="hero-title" className="sr-only">
+        {t("srTitle")}
+      </h1>
+
+      <div className="flex min-h-0 flex-1 items-center justify-center [container-type:size]">
+        <picture className="relative block portrait:[mask-image:linear-gradient(to_bottom,transparent,#000_10%,#000_82%,transparent)] landscape:[mask-image:linear-gradient(to_right,transparent,#000_3%,#000_97%,transparent)] portrait:aspect-[3/2] portrait:w-[min(100cqw,calc(100cqh*1.5))] landscape:aspect-[1844/853] landscape:w-[min(100cqw,calc(100cqh*2.1618))]">
+          <source media="(orientation: portrait)" srcSet={portraitSrcSet} sizes="100vw" />
+          {/* eslint-disable-next-line jsx-a11y/alt-text -- alt, getImageProps ile geliyor */}
+          <img {...landscape} className="absolute inset-0 h-full w-full object-cover" />
+        </picture>
       </div>
 
-      {/* OVERLAY */}
-
-      {/* CONTENT */}
-      <div className="
-        relative z-10
-        h-full
-        container-custom
-        flex
-        items-center
-        md:items-end
-        md:pb-16
-     
-        px-5
-        sm:px-8
-        lg:px-0
-      ">
-
-        {/* TEXT WRAPPER */}
-        <div className="
-          w-full
-          max-w-md
-          md:max-w-xl
-          text-center
-          md:mt-20
-          md:text-left
-        ">
-
-
-
-          {/* CTA */}
-          {/* <div className="
-            flex
-            flex-col
-            gap-4
-            sm:items-center
-            md:items-start
-            md:absolute
-            md:bottom-8
-            md:left-8
-          ">
-
+      <div className="relative border-t border-white/10">
+        <div className="container-site flex flex-col gap-6 pt-6 pb-20 md:flex-row md:items-end md:justify-between md:pb-8 md:pr-20 lg:pr-24 lg:pb-10">
+          <div>
+            <p className="flex items-center gap-3 text-white/85">
+              <span aria-hidden className="h-2 w-2 shrink-0 bg-rose" />
+              {t("location")}
+            </p>
             <a
-              href="https://wa.me/905XXXXXXXXX"
+              href={site.phone.tel}
+              className="mt-2 inline-block text-2xl tracking-wide text-white transition-colors hover:text-rose-200"
+            >
+              {site.phone.display}
+            </a>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+            <a href={site.phone.tel} className="btn btn-primary">
+              {t("ctaCall")}
+            </a>
+            <a
+              href={site.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="
-                inline-flex items-center justify-center gap-3
-                bg-footer
-                px-6 py-4
-                rounded-full
-                font-semibold
-                shadow-xl
-                hover:scale-105 transition-all
-                w-full
-                sm:w-auto
-                text-white
-              "
+              className="inline-flex items-center gap-1 font-semibold text-white underline decoration-white/40 underline-offset-[0.3em] transition-colors hover:decoration-white"
             >
-              <MessageCircle className="w-5 h-5 " />
-              WhatsApp’tan İletişime Geç
+              {t("ctaWhatsapp")}
+              <ArrowUpRight className="h-4 w-4" aria-hidden />
             </a>
-
-
-
-          </div> */}
-
+          </div>
         </div>
-
       </div>
-      <Divider className="md:bg-gray-50  bg-[rgb(var(--color-accent))]" />
-
     </section>
   );
 }

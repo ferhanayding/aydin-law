@@ -1,120 +1,194 @@
 {
-    "about": {
-        "badge": "Founding Attorney",
-        "title": "Attorney İrem Aydın",
-        "desc": "As the founder of Aydın Law & Consulting, Attorney İrem Aydın focuses on sports law, commercial law, energy law, and contract management. Drawing on experience gained through national and international projects, she provides strategic, solution-oriented legal counsel tailored to her clients' needs.",
-        "educationTitle": "Education",
-        "education": "TOBB University of Economics and Technology Faculty of Law • Master's Degree in Sports Management and Legal Skills, ISDE Law Business School (FC Barcelona)",
-        "experienceTitle": "Experience",
-        "experience": "3+ years of international experience and corporate legal consulting background",
-        "points": {
-            "1": "Sports law and sponsorship agreements",
-            "2": "Commercial law and corporate advisory services",
-            "3": "Energy law and regulatory compliance processes",
-            "4": "Contract drafting, negotiation, and risk management"
-        }
-    },
-    "nav": {
-        "home": "Home",
-        "about": "About",
-        "services": "Services",
-        "contact": "Contact"
-    },
-    "hero": {
-        "title": "Attorney İrem Aydın",
-        "subtitle": "Providing reliable and solution-oriented legal services in Ankaara for both individuals and corporate clients.",
-        "breadcrumb": {
-            "home": "Home",
-            "current": "Home"
-        },
-        "ctaNote": "Message us now for a initial consultation."
-    },
-    "footer": {
-        "desc": "Providing reliable, transparent and solution-oriented legal services in Ankara for both individuals and corporate clients.",
-        "links": {
-            "title": "Quick Links",
-            "home": "Home",
-            "about": "About",
-            "services": "Services",
-            "contact": "Contact"
-        },
-        "contact": {
-            "title": "Contact"
-        },
-        "rights": "All rights reserved."
-    },
-    "contact": {
-        "badge": "Contact",
-        "title": "Get Professional Legal Support",
-        "subtitle": "Contact us for professional legal assistance in sports law, commercial law, energy law, and contract advisory services. Every inquiry is carefully reviewed and tailored solutions are provided according to your needs.",
-        "infoTitle": "Contact Information",
-        "phone": "Phone",
-        "email": "Email",
-        "location": "Location",
-        "company": "Aydın Law & Consulting",
-        "ctaTitle": "Take the First Step",
-        "ctaText": "Whether you need legal advice, contract support, or wish to explore collaboration opportunities, we are here to assist you with a professional and solution-oriented approach.",
-        "button": "Contact via WhatsApp",
-        "note": "All communications are handled in accordance with confidentiality principles and professional ethics."
-    },
-    "services": {
-        "badge": "Practice Areas",
-        "title": "Our Services",
-        "subtitle": "We provide strategic and solution-oriented legal advisory services across various sectors.",
-        "sportsLaw": {
-            "title": "Sports Law",
-            "description": "Legal advisory services for athletes, clubs, agencies, and sports organizations, including contract management and sponsorship agreements."
-        },
-        "commercialLaw": {
-            "title": "Commercial & Corporate Law",
-            "description": "Legal support for company formation, commercial operations, corporate structuring, and business-related disputes."
-        },
-        "contractManagement": {
-            "title": "Contract Management",
-            "description": "Drafting, reviewing, negotiating contracts, and assessing legal risks."
-        },
-        "energyLaw": {
-            "title": "Energy Law",
-            "description": "Legal advisory services related to energy projects, licensing procedures, regulatory compliance, and sector-specific agreements."
-        },
-        "dataProtection": {
-            "title": "Data Protection & Privacy",
-            "description": "Compliance with data protection regulations and development of privacy policies."
-        },
-        "internationalLaw": {
-            "title": "International Commercial Transactions",
-            "description": "Legal support for cross-border transactions, international agreements, and foreign investment processes."
-        }
-    },
-    "whyUs": {
-        "badge": "Why Choose Us",
-        "title": "Why Aydın Law & Consulting?",
-        "subtitle": "We evaluate legal matters not only from a legal perspective but also through a strategic and commercial lens.",
-        "items": {
-            "1": {
-                "title": "Client-Focused Approach",
-                "description": "We develop tailored legal solutions and manage every matter according to our clients' specific needs."
-            },
-            "2": {
-                "title": "International Experience",
-                "description": "Our services are supported by experience gained through international projects and cross-border transactions."
-            },
-            "3": {
-                "title": "Transparent Communication",
-                "description": "We prioritize clear, reliable, and effective communication throughout every stage of the process."
-            },
-            "4": {
-                "title": "Strong Contract Management",
-                "description": "We provide comprehensive support in drafting, negotiating, and managing contracts."
-            },
-            "5": {
-                "title": "Risk Management",
-                "description": "We identify potential legal risks early and develop proactive solutions to minimize exposure."
-            },
-            "6": {
-                "title": "Commercial Mindset",
-                "description": "Our legal advice is aligned with business objectives and commercial realities."
-            }
-        }
+  "meta": {
+    "title": "Aydın Law & Consulting | Attorney İrem Aydın – Lawyer in Ankara",
+    "description": "Legal representation and advisory services in Ankara for individuals and companies in commercial, contract, employment, family, criminal, real estate, inheritance and enforcement law."
+  },
+  "nav": {
+    "services": "Practice Areas",
+    "about": "About",
+    "approach": "How We Work",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "menuLabel": "Main menu",
+    "callUs": "Call us",
+    "language": "Language"
+  },
+  "hero": {
+    "srTitle": "Aydın Law & Consulting — Attorney İrem Aydın, Ankara",
+    "location": "Law practice and legal consulting in Ankara",
+    "ctaCall": "Call for a consultation",
+    "ctaWhatsapp": "Message on WhatsApp",
+    "imageAlt": "Ankara at night: Anıtkabir, Atakule and the Aydın Law & Consulting logo"
+  },
+  "statement": {
+    "label": "Our approach",
+    "text": "Every case deserves to be heard first. We don't draw up a plan before we understand your situation, and we explain the options and risks in plain words."
+  },
+  "services": {
+    "label": "Practice Areas",
+    "title": "Where we can help",
+    "intro": "From disputes that arise in everyday life to companies' contract and compliance needs, we advise and represent clients across a wide range of matters. The list below is a starting point; if your topic isn't on it, feel free to ask.",
+    "note": "Something not on the list?",
+    "noteLink": "Tell us briefly and we'll take a look.",
+    "items": {
+      "commercial": {
+        "title": "Commercial & Corporate Law",
+        "description": "Company formation, shareholder and general assembly matters, commercial contracts and representation in commercial disputes."
+      },
+      "contracts": {
+        "title": "Contract Law",
+        "description": "Drafting, reviewing and negotiating contracts, and identifying legal risks in advance."
+      },
+      "labor": {
+        "title": "Employment Law",
+        "description": "Employer–employee disputes, severance and notice pay, reinstatement claims and employment contracts."
+      },
+      "family": {
+        "title": "Family & Divorce Law",
+        "description": "Uncontested and contested divorce, custody, alimony, division of property and other family law matters."
+      },
+      "criminal": {
+        "title": "Criminal Law",
+        "description": "Representation of suspects, defendants, victims and intervening parties during investigation and trial."
+      },
+      "realEstate": {
+        "title": "Real Estate & Tenancy Law",
+        "description": "Title deed cancellation and registration, rent determination and eviction cases, condominium matters and property transactions."
+      },
+      "inheritance": {
+        "title": "Inheritance Law",
+        "description": "Certificates of inheritance, wills, reduction and simulated transaction claims, and division of the estate."
+      },
+      "enforcement": {
+        "title": "Enforcement & Bankruptcy Law",
+        "description": "Debt collection, enforcement proceedings, annulment of objection, negative declaratory actions and bankruptcy."
+      },
+      "administrative": {
+        "title": "Administrative Law",
+        "description": "Annulment and full remedy actions against administrative acts, administrative applications and public procurement."
+      },
+      "sports": {
+        "title": "Sports Law",
+        "description": "Transfer, sponsorship and representation agreements for athletes, clubs and agents, and federation disputes."
+      },
+      "energy": {
+        "title": "Energy Law",
+        "description": "Advisory services on energy projects, licensing procedures, regulatory compliance and sector-specific agreements."
+      },
+      "dataProtection": {
+        "title": "Data Protection (KVKK)",
+        "description": "Compliance with personal data protection legislation, privacy notices and data processing policies."
+      }
     }
+  },
+  "about": {
+    "label": "About",
+    "title": "A small practice, direct communication.",
+    "role": "Founding Attorney",
+    "p1": "Aydın Law & Consulting was founded in Ankara by Attorney İrem Aydın. Your case is handled directly by your attorney, so you always know who to reach.",
+    "p2": "A graduate of TOBB University of Economics and Technology Faculty of Law, İrem Aydın completed a master's in sports management and legal skills at ISDE Law Business School (FC Barcelona). She has worked on national and international projects in commercial, contract, sports and energy law.",
+    "p3": "Today the practice supports individuals in family, employment, real estate, inheritance and criminal matters, and companies with contracts, commercial law and compliance.",
+    "facts": {
+      "degree": {
+        "label": "Law degree",
+        "value": "TOBB University of Economics and Technology"
+      },
+      "masters": {
+        "label": "Master's",
+        "value": "ISDE Law Business School (FC Barcelona) — Sports Management and Legal Skills"
+      },
+      "experience": {
+        "label": "Experience",
+        "value": "3+ years on national and international projects"
+      },
+      "office": {
+        "label": "Office",
+        "value": "Ankara, Türkiye"
+      }
+    },
+    "cta": "Request a consultation"
+  },
+  "approach": {
+    "label": "How We Work",
+    "title": "How does a case move forward?",
+    "intro": "It helps to know what to expect from the first call to the outcome. The process usually follows four steps.",
+    "steps": {
+      "1": {
+        "title": "First contact",
+        "description": "Reach us by phone, WhatsApp or email; a few sentences about your matter is enough."
+      },
+      "2": {
+        "title": "Initial meeting",
+        "description": "We listen to your situation in detail and go through your documents together."
+      },
+      "3": {
+        "title": "Assessment",
+        "description": "We set out the options, the risks and the likely timeline clearly."
+      },
+      "4": {
+        "title": "Follow-through",
+        "description": "Once litigation or advisory work begins, we update you on every significant development."
+      }
+    },
+    "principlesTitle": "Three rules that don't change",
+    "principles": {
+      "1": {
+        "title": "Confidentiality",
+        "description": "Everything you share is protected by the rules of the legal profession and attorney–client privilege."
+      },
+      "2": {
+        "title": "Clarity",
+        "description": "We don't hide behind legal jargon; we explain what is happening and what could happen in plain words."
+      },
+      "3": {
+        "title": "Availability",
+        "description": "You can always ask where your case stands and get a straight answer."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's arrange a conversation.",
+    "text": "Describe your matter briefly and we'll get back to you as soon as possible. For urgent matters, call us directly.",
+    "phone": "Phone",
+    "whatsappValue": "Send a message",
+    "email": "Email",
+    "location": "Office",
+    "locationValue": "Ankara, Türkiye",
+    "note": "All communications are handled in accordance with confidentiality principles and the rules of the legal profession.",
+    "form": {
+      "title": "Leave a message",
+      "text": "The form sends your message to us via WhatsApp.",
+      "name": "Full name",
+      "namePlaceholder": "Your full name",
+      "phone": "Phone",
+      "phonePlaceholder": "+90 5xx xxx xx xx",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a practice area",
+      "subjectOther": "Other",
+      "message": "Your message",
+      "messagePlaceholder": "Briefly describe your matter…",
+      "submit": "Send via WhatsApp",
+      "hint": "When you press Send, WhatsApp opens so you can review your message before sending.",
+      "error": "Please enter your name and message.",
+      "waIntro": "Hello, I'm reaching out through your website."
+    }
+  },
+  "footer": {
+    "desc": "Attorney İrem Aydın's law and consulting practice in Ankara.",
+    "linksTitle": "Page",
+    "contactTitle": "Contact",
+    "location": "Ankara, Türkiye",
+    "rights": "All rights reserved.",
+    "disclaimer": "The information on this website is for general information purposes only and does not constitute legal advice."
+  },
+  "floating": {
+    "whatsapp": "Message us on WhatsApp"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for may have been moved or never existed.",
+    "back": "Back to home"
+  }
 }

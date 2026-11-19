@@ -1,120 +1,194 @@
 {
-    "about": {
-        "badge": "Abogada Fundadora",
-        "title": "Abogada İrem Aydín",
-        "desc": "Como fundadora de Aydín Law & Consulting, la Abogada İrem Aydín se especializa en derecho deportivo, derecho comercial, derecho energético y gestión de contratos. Aprovechando la experiencia adquirida en proyectos nacionales e internacionales, proporciona asesoramiento legal estratégico y orientado a soluciones adaptado a las necesidades de sus clientes.",
-        "educationTitle": "Educación",
-        "education": "Facultad de Derecho de la Universidad de Economía y Tecnología TOBB • Máster en Gestión Deportiva y Habilidades Legales, ISDE Law Business School (FC Barcelona)",
-        "experienceTitle": "Experiencia",
-        "experience": "3+ años de experiencia internacional y antecedentes de consultoría legal corporativa",
-        "points": {
-            "1": "Derecho deportivo y acuerdos de patrocinio",
-            "2": "Asesoramiento comercial y de derecho corporativo",
-            "3": "Derecho energético y procesos de cumplimiento normativo",
-            "4": "Redacción, negociación y gestión de riesgos de contratos"
-        }
-    },
-    "nav": {
-        "home": "Inicio",
-        "about": "Acerca de",
-        "services": "Servicios",
-        "contact": "Contacto"
-    },
-    "hero": {
-        "title": "Abogada İrem Aydín",
-        "subtitle": "Proporcionando servicios legales confiables y orientados a soluciones en Ankara para clientes individuales y corporativos.",
-        "breadcrumb": {
-            "home": "Inicio",
-            "current": "Inicio"
-        },
-        "ctaNote": "Contáctenos ahora para una consulta inicial."
-    },
-    "footer": {
-        "desc": "Proporcionando servicios legales confiables, transparentes y orientados a soluciones en Ankara para clientes individuales y corporativos.",
-        "links": {
-            "title": "Enlaces Rápidos",
-            "home": "Inicio",
-            "about": "Acerca de",
-            "services": "Servicios",
-            "contact": "Contacto"
-        },
-        "contact": {
-            "title": "Contacto"
-        },
-        "rights": "Todos los derechos reservados."
-    },
-    "contact": {
-        "badge": "Contacto",
-        "title": "Obtenga Apoyo Legal Profesional",
-        "subtitle": "Contáctenos para obtener asistencia legal profesional en derecho deportivo, derecho comercial, derecho energético y servicios de consultoría de contratos. Cada consulta se revisa cuidadosamente y se proporcionan soluciones adaptadas según sus necesidades.",
-        "infoTitle": "Información de Contacto",
-        "phone": "Teléfono",
-        "email": "Correo Electrónico",
-        "location": "Ubicación",
-        "company": "Aydín Law & Consulting",
-        "ctaTitle": "Dé el Primer Paso",
-        "ctaText": "Puede contactarnos para obtener apoyo profesional en sus procesos legales, solicitar asesoramiento o evaluar oportunidades de colaboración.",
-        "button": "Contáctenos por WhatsApp",
-        "note": "Todas las consultas se llevan a cabo bajo los principios de confidencialidad y los códigos de conducta profesional."
-    },
-    "services": {
-        "badge": "Áreas de Especialización",
-        "title": "Nuestros Servicios",
-        "subtitle": "Proporcionamos servicios de asesoramiento legal estratégico y orientado a soluciones a nuestros clientes en diversos sectores.",
-        "sportsLaw": {
-            "title": "Derecho Deportivo",
-            "description": "Gestión de contratos, acuerdos de patrocinio y servicios de asesoramiento legal para atletas, clubes, empresas de representación y organizaciones deportivas."
-        },
-        "commercialLaw": {
-            "title": "Derecho Mercantil y Corporativo",
-            "description": "Apoyo legal para constitución de empresas, actividades comerciales, estructuras corporativas y disputas comerciales."
-        },
-        "contractManagement": {
-            "title": "Gestión de Contratos",
-            "description": "Redacción, revisión, negociación de contratos y evaluación de riesgos legales."
-        },
-        "energyLaw": {
-            "title": "Derecho Energético",
-            "description": "Asesoramiento legal para proyectos energéticos, procesos de licencias, cumplimiento normativo y contratos sectoriales."
-        },
-        "dataProtection": {
-            "title": "Protección de Datos y KVKK",
-            "description": "Procesos de cumplimiento de regulaciones de protección de datos personales y elaboración de políticas de protección de datos."
-        },
-        "internationalLaw": {
-            "title": "Transacciones Comerciales Internacionales",
-            "description": "Apoyo legal en actividades comerciales transfronterizas, contratos internacionales y procesos de inversión extranjera."
-        }
-    },
-    "whyUs": {
-        "badge": "Por Qué Nosotros",
-        "title": "¿Por Qué Aydín Law & Consulting?",
-        "subtitle": "Evaluamos sus procesos legales no solo desde una perspectiva legal, sino también estratégica y comercial.",
-        "items": {
-            "1": {
-                "title": "Enfoque Centrado en el Cliente",
-                "description": "Desarrollamos soluciones personalizadas para las necesidades de cada cliente y gestionamos los procesos de forma individual."
-            },
-            "2": {
-                "title": "Experiencia Internacional",
-                "description": "Proporcionamos servicios con experiencia adquirida en proyectos internacionales y transacciones transfronterizas."
-            },
-            "3": {
-                "title": "Comunicación Transparente",
-                "description": "Valoramos la comunicación clara, comprensible y confiable durante todo el proceso."
-            },
-            "4": {
-                "title": "Gestión Sólida de Contratos",
-                "description": "Proporcionamos apoyo integral en la redacción, negociación e implementación de contratos."
-            },
-            "5": {
-                "title": "Gestión de Riesgos",
-                "description": "Identificamos riesgos legales potenciales de antemano y desarrollamos soluciones preventivas."
-            },
-            "6": {
-                "title": "Perspectiva Comercial",
-                "description": "Proporcionamos asesoramiento legal alineado con objetivos comerciales y realidades empresariales."
-            }
-        }
+  "meta": {
+    "title": "Aydın Law & Consulting | Abogada İrem Aydın – Abogados en Ankara",
+    "description": "Asesoría jurídica y representación legal en Ankara para particulares y empresas en derecho mercantil, contractual, laboral, de familia, penal, inmobiliario, sucesorio y de ejecución."
+  },
+  "nav": {
+    "services": "Áreas de práctica",
+    "about": "Nosotros",
+    "approach": "Cómo trabajamos",
+    "contact": "Contacto",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "menuLabel": "Menú principal",
+    "callUs": "Llámenos",
+    "language": "Idioma"
+  },
+  "hero": {
+    "srTitle": "Aydın Law & Consulting — Abogada İrem Aydın, Ankara",
+    "location": "Abogacía y consultoría jurídica en Ankara",
+    "ctaCall": "Llame para una consulta",
+    "ctaWhatsapp": "Escríbanos por WhatsApp",
+    "imageAlt": "Ankara de noche: Anıtkabir, Atakule y el logotipo de Aydın Law & Consulting"
+  },
+  "statement": {
+    "label": "Nuestro enfoque",
+    "text": "Cada caso merece ser escuchado primero. No trazamos un plan sin entender su situación, y explicamos las opciones y los riesgos con palabras sencillas."
+  },
+  "services": {
+    "label": "Áreas de práctica",
+    "title": "En qué podemos ayudarle",
+    "intro": "Desde los conflictos de la vida cotidiana hasta las necesidades contractuales y de cumplimiento de las empresas, asesoramos y representamos a nuestros clientes en una amplia variedad de asuntos. La lista es solo un punto de partida; si su tema no aparece, pregúntenos.",
+    "note": "¿Su asunto no está en la lista?",
+    "noteLink": "Cuéntenoslo brevemente y lo valoraremos.",
+    "items": {
+      "commercial": {
+        "title": "Derecho Mercantil y Societario",
+        "description": "Constitución de sociedades, asuntos de socios y juntas generales, contratos mercantiles y representación en disputas comerciales."
+      },
+      "contracts": {
+        "title": "Derecho Contractual",
+        "description": "Redacción, revisión y negociación de contratos, e identificación anticipada de riesgos legales."
+      },
+      "labor": {
+        "title": "Derecho Laboral",
+        "description": "Conflictos entre empleador y trabajador, indemnizaciones por despido y preaviso, readmisión y contratos de trabajo."
+      },
+      "family": {
+        "title": "Derecho de Familia y Divorcio",
+        "description": "Divorcio de mutuo acuerdo y contencioso, custodia, pensión alimenticia, reparto de bienes y otros asuntos familiares."
+      },
+      "criminal": {
+        "title": "Derecho Penal",
+        "description": "Representación de investigados, acusados, víctimas y partes intervinientes durante la instrucción y el juicio."
+      },
+      "realEstate": {
+        "title": "Derecho Inmobiliario y Arrendamientos",
+        "description": "Anulación e inscripción de títulos de propiedad, fijación de renta y desahucios, propiedad horizontal y compraventa de inmuebles."
+      },
+      "inheritance": {
+        "title": "Derecho Sucesorio",
+        "description": "Certificados de herederos, testamentos, acciones de reducción y de simulación, y partición de la herencia."
+      },
+      "enforcement": {
+        "title": "Ejecución y Quiebras",
+        "description": "Cobro de deudas, procedimientos de ejecución, anulación de oposiciones, acciones declarativas negativas y quiebra."
+      },
+      "administrative": {
+        "title": "Derecho Administrativo",
+        "description": "Recursos de anulación y de plena jurisdicción contra actos administrativos, solicitudes administrativas y contratación pública."
+      },
+      "sports": {
+        "title": "Derecho Deportivo",
+        "description": "Contratos de traspaso, patrocinio y representación para deportistas, clubes y agentes, y disputas ante federaciones."
+      },
+      "energy": {
+        "title": "Derecho Energético",
+        "description": "Asesoramiento en proyectos energéticos, procesos de licencias, cumplimiento normativo y contratos sectoriales."
+      },
+      "dataProtection": {
+        "title": "Protección de Datos (KVKK)",
+        "description": "Cumplimiento de la normativa de protección de datos personales, avisos de privacidad y políticas de tratamiento de datos."
+      }
     }
+  },
+  "about": {
+    "label": "Nosotros",
+    "title": "Un despacho pequeño, comunicación directa.",
+    "role": "Abogada fundadora",
+    "p1": "Aydın Law & Consulting fue fundado en Ankara por la abogada İrem Aydın. Su caso lo lleva directamente su abogada, así que siempre sabe a quién dirigirse.",
+    "p2": "Licenciada en Derecho por la Universidad TOBB de Economía y Tecnología, İrem Aydın cursó un máster en gestión deportiva y habilidades jurídicas en ISDE Law Business School (FC Barcelona). Ha trabajado en proyectos nacionales e internacionales de derecho mercantil, contractual, deportivo y energético.",
+    "p3": "Hoy el despacho asiste a particulares en asuntos de familia, laborales, inmobiliarios, sucesorios y penales, y a empresas en contratos, derecho mercantil y cumplimiento normativo.",
+    "facts": {
+      "degree": {
+        "label": "Licenciatura",
+        "value": "Universidad TOBB de Economía y Tecnología, Facultad de Derecho"
+      },
+      "masters": {
+        "label": "Máster",
+        "value": "ISDE Law Business School (FC Barcelona) — Gestión Deportiva y Habilidades Jurídicas"
+      },
+      "experience": {
+        "label": "Experiencia",
+        "value": "Más de 3 años en proyectos nacionales e internacionales"
+      },
+      "office": {
+        "label": "Despacho",
+        "value": "Ankara, Türkiye"
+      }
+    },
+    "cta": "Solicitar una consulta"
+  },
+  "approach": {
+    "label": "Cómo trabajamos",
+    "title": "¿Cómo avanza un caso?",
+    "intro": "Conviene saber qué esperar desde la primera llamada hasta el resultado. El proceso suele seguir cuatro pasos.",
+    "steps": {
+      "1": {
+        "title": "Primer contacto",
+        "description": "Escríbanos por teléfono, WhatsApp o correo; basta con unas frases sobre su asunto."
+      },
+      "2": {
+        "title": "Reunión inicial",
+        "description": "Escuchamos su situación con detalle y revisamos juntos sus documentos."
+      },
+      "3": {
+        "title": "Valoración",
+        "description": "Exponemos con claridad las opciones, los riesgos y los plazos probables."
+      },
+      "4": {
+        "title": "Seguimiento",
+        "description": "Una vez iniciado el litigio o el asesoramiento, le informamos de cada novedad relevante."
+      }
+    },
+    "principlesTitle": "Tres reglas que no cambian",
+    "principles": {
+      "1": {
+        "title": "Confidencialidad",
+        "description": "Todo lo que comparte está protegido por las normas de la abogacía y el secreto profesional."
+      },
+      "2": {
+        "title": "Claridad",
+        "description": "No nos escondemos tras la jerga jurídica; explicamos lo que ocurre y lo que puede ocurrir con palabras sencillas."
+      },
+      "3": {
+        "title": "Disponibilidad",
+        "description": "Siempre puede preguntar en qué punto está su caso y recibir una respuesta clara."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "Hablemos de su caso.",
+    "text": "Describa brevemente su asunto y le responderemos lo antes posible. Para asuntos urgentes, llámenos directamente.",
+    "phone": "Teléfono",
+    "whatsappValue": "Enviar un mensaje",
+    "email": "Correo",
+    "location": "Despacho",
+    "locationValue": "Ankara, Türkiye",
+    "note": "Todas las comunicaciones se tratan conforme a los principios de confidencialidad y las normas de la abogacía.",
+    "form": {
+      "title": "Déjenos un mensaje",
+      "text": "El formulario nos envía su mensaje por WhatsApp.",
+      "name": "Nombre y apellidos",
+      "namePlaceholder": "Su nombre completo",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+90 5xx xxx xx xx",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Seleccione un área de práctica",
+      "subjectOther": "Otro",
+      "message": "Su mensaje",
+      "messagePlaceholder": "Describa brevemente su asunto…",
+      "submit": "Enviar por WhatsApp",
+      "hint": "Al pulsar Enviar se abrirá WhatsApp para que pueda revisar su mensaje antes de enviarlo.",
+      "error": "Por favor, escriba su nombre y su mensaje.",
+      "waIntro": "Hola, les escribo a través de su sitio web."
+    }
+  },
+  "footer": {
+    "desc": "El despacho de abogados y consultoría de İrem Aydın en Ankara.",
+    "linksTitle": "Página",
+    "contactTitle": "Contacto",
+    "location": "Ankara, Türkiye",
+    "rights": "Todos los derechos reservados.",
+    "disclaimer": "La información de este sitio web tiene carácter meramente informativo y no constituye asesoramiento jurídico."
+  },
+  "floating": {
+    "whatsapp": "Escríbanos por WhatsApp"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "Es posible que la página que busca se haya movido o no exista.",
+    "back": "Volver al inicio"
+  }
 }

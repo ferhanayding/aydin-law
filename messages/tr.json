@@ -1,120 +1,194 @@
 {
-    "about": {
-        "badge": "Kurucu Avukat",
-        "title": "Av. İrem Aydın",
-        "desc": "Aydın Law & Consulting'in kurucusu olan Av. İrem Aydın, spor hukuku, ticaret hukuku, enerji hukuku ve sözleşme yönetimi alanlarında faaliyet göstermektedir. Ulusal ve uluslararası projelerde edindiği deneyimle müvekkillerine stratejik ve çözüm odaklı hukuki danışmanlık sunmaktadır.",
-        "educationTitle": "Eğitim",
-        "education": "TOBB ETÜ Hukuk Fakültesi • ISDE Law Business School (FC Barcelona) Spor Yönetimi ve Hukuki Beceriler Yüksek Lisansı",
-        "experienceTitle": "Deneyim",
-        "experience": "3+ yıllık uluslararası deneyim ve kurumsal danışmanlık geçmişi",
-        "points": {
-            "1": "Spor hukuku ve sponsorluk sözleşmeleri",
-            "2": "Ticaret hukuku ve şirket danışmanlığı",
-            "3": "Enerji hukuku ve düzenleyici uyum süreçleri",
-            "4": "Sözleşme hazırlama, müzakere ve risk yönetimi"
-        }
-    },
-    "nav": {
-        "home": "Ana Sayfa",
-        "about": "Hakkımızda",
-        "services": "Hizmetler",
-        "contact": "İletişim"
-    },
-    "hero": {
-        "title": "Avukat İrem Aydın",
-        "subtitle": "Ankara’da bireysel ve kurumsal müvekkiller için güvenilir ve çözüm odaklı hukuki danışmanlık hizmeti.",
-        "breadcrumb": {
-            "home": "Anasayfa",
-            "current": "Ana Sayfa"
-        },
-        "ctaNote": "Ön görüşme için hemen yazın."
-    },
-    "footer": {
-        "desc": "Ankara merkezli avukatlık hizmetleriyle bireysel ve kurumsal müvekkillerine güvenilir, şeffaf ve çözüm odaklı hukuki danışmanlık sunar.",
-        "links": {
-            "title": "Hızlı Erişim",
-            "home": "Anasayfa",
-            "about": "Hakkımda",
-            "services": "Hizmetler",
-            "contact": "İletişim"
-        },
-        "contact": {
-            "title": "İletişim"
-        },
-        "rights": "Tüm hakları saklıdır."
-    },
-    "contact": {
-        "badge": "İletişim",
-        "title": "Hukuki Destek İçin Bize Ulaşın",
-        "subtitle": "Spor hukuku, ticaret hukuku, enerji hukuku ve sözleşme danışmanlığı alanlarında profesyonel hukuki destek almak için bizimle iletişime geçebilirsiniz. Her talep titizlikle değerlendirilmekte ve ihtiyaçlarınıza özel çözümler sunulmaktadır.",
-        "infoTitle": "İletişim Bilgileri",
-        "phone": "Telefon",
-        "email": "E-Posta",
-        "location": "Konum",
-        "company": "Aydın Law & Consulting",
-        "ctaTitle": "İlk Adımı Atın",
-        "ctaText": "Hukuki süreçlerinizde profesyonel destek almak, danışmanlık talebinde bulunmak veya iş birliği fırsatlarını değerlendirmek için bizimle iletişime geçebilirsiniz.",
-        "button": "WhatsApp'tan İletişime Geç",
-        "note": "Tüm görüşmeler gizlilik ilkesi ve meslek kuralları çerçevesinde yürütülmektedir."
-    },
-    "services": {
-        "badge": "Uzmanlık Alanları",
-        "title": "Hizmetlerimiz",
-        "subtitle": "Müvekkillerimize farklı sektörlerde stratejik ve çözüm odaklı hukuki danışmanlık hizmetleri sunuyoruz.",
-        "sportsLaw": {
-            "title": "Spor Hukuku",
-            "description": "Sporcular, kulüpler, menajerlik şirketleri ve spor organizasyonlarına yönelik sözleşme yönetimi, sponsorluk anlaşmaları ve hukuki danışmanlık hizmetleri."
-        },
-        "commercialLaw": {
-            "title": "Ticaret ve Şirketler Hukuku",
-            "description": "Şirket kuruluşları, ticari faaliyetler, kurumsal yapılandırmalar ve ticari uyuşmazlıklara ilişkin hukuki destek."
-        },
-        "contractManagement": {
-            "title": "Sözleşme Yönetimi",
-            "description": "Sözleşmelerin hazırlanması, incelenmesi, müzakere edilmesi ve hukuki risklerin değerlendirilmesi."
-        },
-        "energyLaw": {
-            "title": "Enerji Hukuku",
-            "description": "Enerji projeleri, lisans süreçleri, düzenleyici uyum ve sektörel sözleşmelere ilişkin hukuki danışmanlık."
-        },
-        "dataProtection": {
-            "title": "KVKK ve Veri Koruma",
-            "description": "Kişisel verilerin korunması mevzuatına uyum süreçleri ve veri koruma politikalarının oluşturulması."
-        },
-        "internationalLaw": {
-            "title": "Uluslararası Ticari İşlemler",
-            "description": "Sınır ötesi ticari faaliyetler, uluslararası sözleşmeler ve yabancı yatırım süreçlerinde hukuki destek."
-        }
-    },
-    "whyUs": {
-        "badge": "Neden Biz",
-        "title": "Neden Aydın Law & Consulting?",
-        "subtitle": "Hukuki süreçlerinizi yalnızca yasal açıdan değil, stratejik ve ticari açıdan da değerlendiriyoruz.",
-        "items": {
-            "1": {
-                "title": "Müvekkil Odaklı Yaklaşım",
-                "description": "Her müvekkilin ihtiyaçlarına özel çözümler geliştiriyor ve süreçleri bireysel olarak yönetiyoruz."
-            },
-            "2": {
-                "title": "Uluslararası Deneyim",
-                "description": "Uluslararası projeler ve sınır ötesi işlemlerden edinilmiş tecrübeyle hizmet sunuyoruz."
-            },
-            "3": {
-                "title": "Şeffaf İletişim",
-                "description": "Süreç boyunca açık, anlaşılır ve güvenilir iletişim kurmaya önem veriyoruz."
-            },
-            "4": {
-                "title": "Güçlü Sözleşme Yönetimi",
-                "description": "Sözleşmelerin hazırlanması, müzakeresi ve uygulanmasında kapsamlı destek sağlıyoruz."
-            },
-            "5": {
-                "title": "Risk Yönetimi",
-                "description": "Olası hukuki riskleri önceden tespit ederek koruyucu çözümler geliştiriyoruz."
-            },
-            "6": {
-                "title": "Ticari Bakış Açısı",
-                "description": "Hukuki danışmanlığı iş hedefleri ve ticari gerçeklerle uyumlu şekilde sunuyoruz."
-            }
-        }
+  "meta": {
+    "title": "Aydın Law & Consulting | Av. İrem Aydın – Ankara Avukat",
+    "description": "Ankara'da bireysel ve kurumsal müvekkillere ticaret, sözleşme, iş, aile, ceza, gayrimenkul, miras ve icra hukuku alanlarında avukatlık ve hukuki danışmanlık hizmeti."
+  },
+  "nav": {
+    "services": "Çalışma Alanları",
+    "about": "Hakkımızda",
+    "approach": "Çalışma Şekli",
+    "contact": "İletişim",
+    "menu": "Menü",
+    "close": "Kapat",
+    "menuLabel": "Ana menü",
+    "callUs": "Bizi arayın",
+    "language": "Dil seçimi"
+  },
+  "hero": {
+    "srTitle": "Aydın Law & Consulting — Av. İrem Aydın, Ankara",
+    "location": "Ankara'da avukatlık ve hukuki danışmanlık",
+    "ctaCall": "Ön görüşme için arayın",
+    "ctaWhatsapp": "WhatsApp'tan yazın",
+    "imageAlt": "Gece Ankara: Anıtkabir, Atakule ve Aydın Law & Consulting logosu"
+  },
+  "statement": {
+    "label": "Yaklaşımımız",
+    "text": "Her dosya önce dinlenmeyi hak eder. Durumunuzu anlamadan yol haritası çizmiyor; seçenekleri ve riskleri sade bir dille anlatıyoruz."
+  },
+  "services": {
+    "label": "Çalışma Alanları",
+    "title": "Hangi konularda yanınızdayız",
+    "intro": "Günlük hayatın içinden çıkan uyuşmazlıklardan şirketlerin sözleşme ve uyum ihtiyaçlarına kadar geniş bir alanda danışmanlık veriyor, dava takip ediyoruz. Aşağıdaki liste bir başlangıç; konunuz burada yoksa da sormaktan çekinmeyin.",
+    "note": "Listede olmayan bir konu mu?",
+    "noteLink": "Kısaca anlatın, değerlendirelim.",
+    "items": {
+      "commercial": {
+        "title": "Ticaret ve Şirketler Hukuku",
+        "description": "Şirket kuruluşu, ortaklık ve genel kurul işlemleri, ticari sözleşmeler ve ticari uyuşmazlıklarda danışmanlık ve dava takibi."
+      },
+      "contracts": {
+        "title": "Sözleşmeler Hukuku",
+        "description": "Sözleşmelerin hazırlanması, incelenmesi ve müzakeresi; hukuki risklerin önceden tespit edilmesi."
+      },
+      "labor": {
+        "title": "İş Hukuku",
+        "description": "İşçi–işveren uyuşmazlıkları, kıdem ve ihbar tazminatı, işe iade davaları ve iş sözleşmeleri."
+      },
+      "family": {
+        "title": "Aile ve Boşanma Hukuku",
+        "description": "Anlaşmalı ve çekişmeli boşanma, velayet, nafaka, mal paylaşımı ve aile hukukundan doğan diğer davalar."
+      },
+      "criminal": {
+        "title": "Ceza Hukuku",
+        "description": "Soruşturma ve kovuşturma aşamalarında şüpheli, sanık, mağdur ve katılan vekilliği."
+      },
+      "realEstate": {
+        "title": "Gayrimenkul ve Kira Hukuku",
+        "description": "Tapu iptal ve tescil, kira tespit ve tahliye davaları, kat mülkiyeti ve gayrimenkul alım-satım süreçleri."
+      },
+      "inheritance": {
+        "title": "Miras Hukuku",
+        "description": "Mirasçılık belgesi, vasiyetname, tenkis ve muris muvazaası davaları ile terekenin paylaşımı."
+      },
+      "enforcement": {
+        "title": "İcra ve İflas Hukuku",
+        "description": "Alacak tahsili, icra takipleri, itirazın iptali, menfi tespit ve iflas süreçleri."
+      },
+      "administrative": {
+        "title": "İdare Hukuku",
+        "description": "İdari işlemlere karşı iptal ve tam yargı davaları, idari başvurular ve kamu ihalesi süreçleri."
+      },
+      "sports": {
+        "title": "Spor Hukuku",
+        "description": "Sporcu, kulüp ve menajerlere yönelik transfer, sponsorluk ve temsil sözleşmeleri ile federasyon uyuşmazlıkları."
+      },
+      "energy": {
+        "title": "Enerji Hukuku",
+        "description": "Enerji projeleri, lisans süreçleri, düzenleyici uyum ve sektörel sözleşmelere ilişkin danışmanlık."
+      },
+      "dataProtection": {
+        "title": "KVKK ve Veri Koruma",
+        "description": "Kişisel verilerin korunması mevzuatına uyum, aydınlatma metinleri ve veri işleme politikalarının hazırlanması."
+      }
     }
+  },
+  "about": {
+    "label": "Hakkımızda",
+    "title": "Küçük bir büro, doğrudan iletişim.",
+    "role": "Kurucu Avukat",
+    "p1": "Aydın Law & Consulting, Av. İrem Aydın tarafından Ankara'da kuruldu. Dosyanızla doğrudan avukatınız ilgilenir; kime ulaşacağınızı her zaman bilirsiniz.",
+    "p2": "TOBB ETÜ Hukuk Fakültesi'nden mezun olan Av. İrem Aydın, spor yönetimi ve hukuki beceriler üzerine yüksek lisansını ISDE Law Business School (FC Barcelona) bünyesinde yaptı. Ulusal ve uluslararası projelerde ticaret, sözleşme, spor ve enerji hukuku alanlarında çalıştı.",
+    "p3": "Büro bugün bireysel müvekkillere aile, iş, gayrimenkul, miras ve ceza hukuku gibi alanlarda; şirketlere ise sözleşme, ticaret hukuku ve uyum süreçlerinde destek veriyor.",
+    "facts": {
+      "degree": {
+        "label": "Lisans",
+        "value": "TOBB ETÜ Hukuk Fakültesi"
+      },
+      "masters": {
+        "label": "Yüksek Lisans",
+        "value": "ISDE Law Business School (FC Barcelona) — Spor Yönetimi ve Hukuki Beceriler"
+      },
+      "experience": {
+        "label": "Deneyim",
+        "value": "Ulusal ve uluslararası projelerde 3+ yıl"
+      },
+      "office": {
+        "label": "Büro",
+        "value": "Ankara, Türkiye"
+      }
+    },
+    "cta": "Ön görüşme talep edin"
+  },
+  "approach": {
+    "label": "Çalışma Şekli",
+    "title": "Bir dosya nasıl ilerler?",
+    "intro": "İlk telefondan sonuca kadar neyle karşılaşacağınızı bilmeniz önemli. Süreç genellikle dört adımda ilerler.",
+    "steps": {
+      "1": {
+        "title": "Tanışma",
+        "description": "Telefon, WhatsApp ya da e-posta ile ulaşırsınız; konunuzu birkaç cümleyle anlatmanız yeterli."
+      },
+      "2": {
+        "title": "Ön görüşme",
+        "description": "Durumunuzu ayrıntılı dinler, elinizdeki belgeleri birlikte gözden geçiririz."
+      },
+      "3": {
+        "title": "Değerlendirme",
+        "description": "Seçenekleri, riskleri ve olası süreyi açıkça paylaşırız."
+      },
+      "4": {
+        "title": "Takip",
+        "description": "Dava ya da danışmanlık süreci başladığında her önemli gelişmede size haber veririz."
+      }
+    },
+    "principlesTitle": "Değişmeyen üç kural",
+    "principles": {
+      "1": {
+        "title": "Gizlilik",
+        "description": "Paylaştığınız her bilgi avukatlık meslek kuralları ve sır saklama yükümlülüğü kapsamındadır."
+      },
+      "2": {
+        "title": "Açıklık",
+        "description": "Hukuki terimlerin arkasına saklanmayız; ne olduğunu ve ne olabileceğini sade bir dille anlatırız."
+      },
+      "3": {
+        "title": "Ulaşılabilirlik",
+        "description": "Dosyanızın hangi aşamada olduğunu her zaman sorabilir, net bir cevap alabilirsiniz."
+      }
+    }
+  },
+  "contact": {
+    "label": "İletişim",
+    "title": "Bir görüşme planlayalım.",
+    "text": "Konunuzu kısaca anlatın, size en kısa sürede dönelim. Acil durumlarda doğrudan arayabilirsiniz.",
+    "phone": "Telefon",
+    "whatsappValue": "Mesaj gönderin",
+    "email": "E-posta",
+    "location": "Büro",
+    "locationValue": "Ankara, Türkiye",
+    "note": "Tüm görüşmeler gizlilik ilkesi ve avukatlık meslek kuralları çerçevesinde yürütülür.",
+    "form": {
+      "title": "Mesaj bırakın",
+      "text": "Form, mesajınızı WhatsApp üzerinden bize iletir.",
+      "name": "Ad Soyad",
+      "namePlaceholder": "Adınız ve soyadınız",
+      "phone": "Telefon",
+      "phonePlaceholder": "05xx xxx xx xx",
+      "subject": "Konu",
+      "subjectPlaceholder": "Bir çalışma alanı seçin",
+      "subjectOther": "Diğer",
+      "message": "Mesajınız",
+      "messagePlaceholder": "Konunuzu kısaca anlatın…",
+      "submit": "WhatsApp ile gönder",
+      "hint": "Gönder'e bastığınızda WhatsApp açılır; mesajınızı kontrol edip gönderebilirsiniz.",
+      "error": "Lütfen adınızı ve mesajınızı yazın.",
+      "waIntro": "Merhaba, web siteniz üzerinden ulaşıyorum."
+    }
+  },
+  "footer": {
+    "desc": "Av. İrem Aydın'ın Ankara'daki hukuk ve danışmanlık bürosu.",
+    "linksTitle": "Sayfa",
+    "contactTitle": "İletişim",
+    "location": "Ankara, Türkiye",
+    "rights": "Tüm hakları saklıdır.",
+    "disclaimer": "Bu sitedeki bilgiler genel bilgilendirme amaçlıdır ve hukuki tavsiye niteliği taşımaz."
+  },
+  "floating": {
+    "whatsapp": "WhatsApp ile yazın"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "text": "Aradığınız sayfa taşınmış veya hiç var olmamış olabilir.",
+    "back": "Ana sayfaya dön"
+  }
 }

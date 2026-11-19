@@ -1,116 +1,48 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
-import {
-  Scale,
-  Briefcase,
-  FileText,
-  Zap,
-  Shield,
-  Globe
-} from 'lucide-react';
+import { useTranslations } from "next-intl";
+import SectionLabel from "./section-label";
+import { practiceAreas } from "@/lib/site";
 
 export default function Services() {
-  const t = useTranslations('services');
+  const t = useTranslations("services");
 
-  const services = [
-    {
-      icon: Scale,
-      title: t('sportsLaw.title'),
-      description: t('sportsLaw.description')
-    },
-    {
-      icon: Briefcase,
-      title: t('commercialLaw.title'),
-      description: t('commercialLaw.description')
-    },
-    {
-      icon: FileText,
-      title: t('contractManagement.title'),
-      description: t('contractManagement.description')
-    },
-    {
-      icon: Zap,
-      title: t('energyLaw.title'),
-      description: t('energyLaw.description')
-    },
-    {
-      icon: Shield,
-      title: t('dataProtection.title'),
-      description: t('dataProtection.description')
-    },
-    {
-      icon: Globe,
-      title: t('internationalLaw.title'),
-      description: t('internationalLaw.description')
-    }
-  ];
+  return (
+    <section id="services" aria-labelledby="services-title" className="section-y">
+      <div className="container-site">
+        <div className="grid gap-8 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-5">
+            <SectionLabel index="01">{t("label")}</SectionLabel>
+            <h2 id="services-title" className="mt-6 text-4xl leading-[1.08] sm:text-5xl lg:text-[3.5rem]">
+              {t("title")}
+            </h2>
+          </div>
+          <div className="lg:col-span-6 lg:col-start-7 lg:pt-12">
+            <p className="text-lg leading-relaxed text-ink-soft">{t("intro")}</p>
+          </div>
+        </div>
 
-  return (<section
-    id="services"
-    className="md:py-24 bg-gray-50"
-  > <div className="container-custom px-5 sm:px-8 lg:px-0">
+        <ol className="mt-16 grid md:grid-cols-2 md:gap-x-12 lg:mt-20 lg:gap-x-20">
+          {practiceAreas.map((key, i) => (
+            <li key={key} className="group flex gap-5 border-t border-line py-7 sm:gap-8">
+              <span className="w-6 shrink-0 pt-1.5 text-sm font-semibold text-rose-700 tabular-nums">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <div>
+                <h3 className="text-[1.65rem] leading-tight text-ink transition-colors group-hover:text-rose-700">
+                  {t(`items.${key}.title`)}
+                </h3>
+                <p className="mt-2 text-[0.95rem] leading-relaxed text-ink-soft">{t(`items.${key}.description`)}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
 
-
-      <div className="max-w-3xl mx-auto text-center mb-16">
-        <span className="text-sm uppercase tracking-[0.3em] text-[rgb(var(--color-accent))] font-semibold">
-          {t('badge')}
-        </span>
-
-        <h2 className="mt-4 text-4xl md:text-5xl font-bold text-footer">
-          {t('title')}
-        </h2>
-
-        <p className="mt-6 text-gray-600">
-          {t('subtitle')}
+        <p className="mt-6 border-t border-line pt-8 text-ink-soft">
+          {t("note")}{" "}
+          <a href="#contact" className="link-line font-semibold text-ink">
+            {t("noteLink")}
+          </a>
         </p>
       </div>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service, index) => {
-          const Icon = service.icon;
-
-          return (
-            <div
-              key={index}
-              className="
-              bg-white
-              rounded-3xl
-              p-8
-              shadow-sm
-              hover:shadow-xl
-              transition-all
-              hover:-translate-y-1
-            "
-            >
-              <div className="
-              w-14
-              h-14
-              rounded-2xl
-              bg-[rgb(var(--color-accent))]
-              flex
-              items-center
-              justify-center
-              mb-6
-            ">
-                <Icon className="w-7 h-7 text-white" />
-              </div>
-
-              <h3 className="text-xl font-semibold text-footer mb-4">
-                {service.title}
-              </h3>
-
-              <p className="text-gray-600 leading-relaxed">
-                {service.description}
-              </p>
-            </div>
-          );
-        })}
-      </div>
-
-    </div>
-  </section>
-
-
+    </section>
   );
 }

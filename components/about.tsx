@@ -1,102 +1,69 @@
-'use client';
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import SectionLabel from "./section-label";
+import { site } from "@/lib/site";
 
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
+const facts = ["degree", "masters", "experience", "office"] as const;
 
 export default function About() {
-  const t = useTranslations('about');
+  const t = useTranslations("about");
 
   return (
-    <section className="section-padding bg-footer" id="about">
-      <div className="container-custom grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+    <section id="about" aria-labelledby="about-title" className="section-y bg-sand">
+      <div className="container-site grid gap-14 lg:grid-cols-12 lg:gap-16">
+        {/* KARTVİZİT */}
+        <div className="lg:col-span-5">
+          <SectionLabel index="02">{t("label")}</SectionLabel>
 
+          <div className="mt-8 border border-line bg-paper p-7 sm:p-9 lg:sticky lg:top-[calc(var(--header-height)+2rem)]">
+            <div className="flex items-center gap-5">
+              <Image
+                src="/images/logo-mark.png"
+                alt=""
+                width={128}
+                height={128}
+                className="h-16 w-16 shrink-0 object-contain"
+              />
+              <div>
+                <p className="font-serif text-[1.75rem] leading-tight text-ink">{site.attorney}</p>
+                <p className="mt-1 text-sm text-ink-soft">{t("role")}</p>
+              </div>
+            </div>
 
-        {/* IMAGE */}
-        <div
-          className="
-        relative
-        w-full
-        aspect-4/5
-        rounded-3xl
-        overflow-hidden
-        bg-white/10
-      "
-        >
-          <Image
-            src="/images/atakuleanitkabir.png"
-            alt="İrem Aydın"
-            fill
-
-            priority
-            className="object-cover"
-          />
+            <dl className="mt-8 divide-y divide-line border-t border-line text-[0.95rem]">
+              {facts.map((f) => (
+                <div
+                  key={f}
+                  className="grid gap-1 py-4 sm:grid-cols-[8.5rem_1fr] sm:gap-4 lg:grid-cols-1 lg:gap-1 xl:grid-cols-[8rem_1fr] xl:gap-4"
+                >
+                  <dt className="text-ink-soft">{t(`facts.${f}.label`)}</dt>
+                  <dd className="text-ink">{t(`facts.${f}.value`)}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
 
-        {/* TEXT */}
-        <div className="text-center lg:text-left text-white">
-
-          <span className="uppercase tracking-[0.3em] text-white/70 text-sm font-semibold">
-            {t('badge')}
-          </span>
-
-          <h2
-            className="
-          text-3xl
-          sm:text-4xl
-          lg:text-5xl
-          font-bold
-          mt-4
-          mb-6
-        "
-          >
-            {t('title')}
+        {/* METİN */}
+        <div className="lg:col-span-6 lg:col-start-7 lg:pt-14">
+          <h2 id="about-title" className="text-4xl leading-[1.08] sm:text-5xl lg:text-[3.5rem]">
+            {t("title")}
           </h2>
 
-          <p
-            className="
-          text-white/85
-          text-base
-          sm:text-lg
-          leading-relaxed
-          mb-8
-        "
-          >
-            {t('desc')}
-          </p>
-
-          <div className="grid sm:grid-cols-2 gap-4 mb-8">
-
-            <div className="bg-white/10 rounded-2xl p-5 backdrop-blur-sm">
-              <h3 className="font-semibold mb-2">
-                {t('educationTitle')}
-              </h3>
-              <p className="text-white/80 text-sm">
-                {t('education')}
-              </p>
-            </div>
-
-            <div className="bg-white/10 rounded-2xl p-5 backdrop-blur-sm">
-              <h3 className="font-semibold mb-2">
-                {t('experienceTitle')}
-              </h3>
-              <p className="text-white/80 text-sm">
-                {t('experience')}
-              </p>
-            </div>
-
+          <div className="mt-10 space-y-6 text-lg leading-relaxed text-ink-soft">
+            <p>{t("p1")}</p>
+            <p>{t("p2")}</p>
+            <p>{t("p3")}</p>
           </div>
 
-          <ul className="space-y-3 text-white/90">
-            <li>✓ {t('points.1')}</li>
-            <li>✓ {t('points.2')}</li>
-            <li>✓ {t('points.3')}</li>
-            <li>✓ {t('points.4')}</li>
-          </ul>
-
+          <div className="mt-12 flex flex-wrap items-end justify-between gap-6 border-t border-line pt-8">
+            <p className="font-serif text-4xl text-rose-700 italic">İrem Aydın</p>
+            <a href="#contact" className="link-line text-[0.95rem] font-semibold text-ink">
+              {t("cta")}
+            </a>
+          </div>
         </div>
-
       </div>
     </section>
-
   );
 }

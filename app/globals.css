@@ -1,88 +1,177 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
+/* ---------- TASARIM SİSTEMİ ----------
+   Ana renk: #A5737D (gül kurusu)
+   Zemin: sıcak kâğıt tonları · Metin: sıcak siyah
+---------------------------------------- */
+
+/* Sitenin tamamı EB Garamond */
+@theme inline {
+  --font-sans: var(--font-garamond), ui-serif, Georgia, serif;
+  --font-serif: var(--font-garamond), ui-serif, Georgia, serif;
+}
+
+@theme {
+  --color-rose: #a5737d;
+  --color-rose-50: #f7efed;
+  --color-rose-100: #eee2e1;
+  --color-rose-200: #dcc2c4;
+  --color-rose-700: #7e525c;
+  --color-rose-800: #623f47;
+  --color-rose-900: #4a2f36;
+
+  --color-paper: #f8f4f0;
+  --color-sand: #f0e9e3;
+  --color-ink: #2a2326;
+  --color-ink-soft: #5f5459;
+  --color-line: rgb(42 35 38 / 0.14);
 }
 
 :root {
-  --color-primary: 15 23 42;
-  /* Navy */
-  --color-accent: 199 154 107;
-  /* Gold */
-  --color-accent-light: 200 155 72;
-  /* Light Gold */
-  --header-height: 50px;
-  --color-footer:165 115 125;
+  --header-height: 72px;
 }
 
-/* ---------- BASE ---------- */
+@media (min-width: 1024px) {
+  :root {
+    --header-height: 88px;
+  }
+}
+
+/* ---------- TEMEL ---------- */
 
 @layer base {
-  button {
+  html {
+    /* Garamond'un küçük x-yüksekliği için taban punto 17px */
+    font-size: 106.25%;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+  }
 
+  body {
+    @apply bg-paper font-serif text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif;
+    text-wrap: balance;
+  }
+
+  h1,
+  h2 {
+    @apply font-bold;
+  }
+
+  h3,
+  h4 {
+    @apply font-semibold;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button,
+  a,
+  select {
     cursor: pointer;
   }
 
-  a {
-    cursor: pointer;
+  ::selection {
+    @apply bg-rose-200 text-ink;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-rose-700;
   }
 }
 
-body {
-  color: rgb(17 24 39);
-  background: white;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
-/* ---------- DESIGN SYSTEM ---------- */
+/* ---------- YARDIMCI SINIFLAR ---------- */
 
-.section-padding {
-  padding: 7rem 1.5rem;
-}
-
-.container-custom {
-  max-width: 80rem;
+@utility container-site {
+  width: 100%;
+  max-width: 78rem;
   margin-inline: auto;
+  padding-inline: 1.25rem;
+
+  @media (min-width: 640px) {
+    padding-inline: 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding-inline: 3rem;
+  }
 }
 
-.bg-primary {
-  background-color: rgb(var(--color-primary));
+@utility section-y {
+  padding-block: 5rem;
+
+  @media (min-width: 1024px) {
+    padding-block: 8rem;
+  }
 }
 
-.bg-accent {
-  background-color: rgb(var(--color-accent));
-}
-.text-primary {
-  color: rgb(var(--color-primary));
-}
-.text-footer {
-  color: rgb(var(--color-footer));
-}
-.bg-footer {
-  background-color: rgb(var(--color-footer));
-}
-.text-accent {
-  color: rgb(var(--color-accent));
-}
-
-.text-accent-light {
-  color: rgb(var(--color-accent-light));
-}
-
-/* Buttons */
-
-.btn-primary {
-  background: rgb(var(--color-accent));
-  color: rgb(var(--color-primary));
-  padding: 1rem 2rem;
-  border-radius: 0.75rem;
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 2px;
+  padding: 0.95rem 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
-  transition: all 0.25s ease;
+  line-height: 1.2;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 40px rgb(var(--color-accent) / 0.3);
+@utility btn-primary {
+  background: var(--color-rose-700);
+  color: white;
+
+  &:hover {
+    background: var(--color-rose-900);
+  }
 }
-.font-garamond {
-  font-family: var(--font-garamond);
+
+@utility btn-light {
+  background: var(--color-paper);
+  color: var(--color-rose-900);
+
+  &:hover {
+    background: var(--color-rose-100);
+  }
+}
+
+/* Altı çizili metin bağlantısı */
+@utility link-line {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  text-decoration-color: var(--color-rose);
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+
+  &:hover {
+    color: var(--color-rose-700);
+    text-decoration-color: currentColor;
+  }
 }

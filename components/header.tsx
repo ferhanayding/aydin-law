@@ -1,146 +1,145 @@
-'use client';
-import { useState } from 'react';
-import { useTranslations } from 'next-intl';
-import { Menu, X } from 'lucide-react';
-import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+"use client";
+
+import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+import Wordmark from "./wordmark";
+import LanguageSwitcher from "./language-switcher";
+import { navItems, sectionIds, site } from "@/lib/site";
 
 export default function Header() {
-  const t = useTranslations('nav');
+  const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState<string | null>(null);
+
+  // Görünen bölüme göre menüdeki aktif linki işaretle
+  useEffect(() => {
+    const sections = Object.values(sectionIds)
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => el !== null);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) if (e.isIntersecting) setActive(e.target.id);
+      },
+      { rootMargin: "-45% 0px -50% 0px" }
+    );
+
+    sections.forEach((s) => observer.observe(s));
+    return () => observer.disconnect();
+  }, []);
+
+  // Mobil menü açıkken sayfa kaymasın, ESC ile kapansın
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
 
   return (
-    <header className="fixed top-0 px-5 inset-x-0 z-50 bg-gray-50 border-b border-white/10">
-      <div className="container-custom flex items-center justify-between h-(--header-height)">
+    <header className="sticky top-0 z-50 border-b border-line bg-paper/92 backdrop-blur-sm">
+      <div className="container-site flex h-(--header-height) items-center justify-between gap-6">
+        <a href={`#${sectionIds.home}`} aria-label={site.name} className="min-w-0" onClick={() => setOpen(false)}>
+          <Wordmark />
+        </a>
 
-        {/* LOGO */}
-        <div className="font-extrabold text-xl tracking-tight text-footer 
-         flex items-center gap-2">
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-2 hover:opacity-80 transition"
-          >
-            <span>
-
-              Av. İrem Aydın
-            </span>
-          </button>
-        </div>
-
-        {/* DESKTOP NAV */}
-        <nav className="hidden lg:flex  items-center justify-end gap-10 text-sm font-medium ">
-          {['home', 'about', 'services', 'contact'].map((item) => (
-            <a
-              key={item}
-              href={`#${item}`}
-              className="relative text-primary transition-colors duration-300
-               hover:text-footer after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-footer after:transition-all hover:after:w-full"
-            >
-
-              {t(item)}
-            </a>
-          ))}
+        {/* MASAÜSTÜ */}
+        <nav aria-label={t("menuLabel")} className="hidden items-center gap-8 xl:flex">
+          {navItems.map((item) => {
+            const id = sectionIds[item];
+            return (
+              <a
+                key={item}
+                href={`#${id}`}
+                aria-current={active === id ? "true" : undefined}
+                className={`text-[1.05rem] whitespace-nowrap transition-colors ${
+                  active === id ? "text-rose-700" : "text-ink hover:text-rose-700"
+                }`}
+              >
+                {t(item)}
+              </a>
+            );
+          })}
         </nav>
 
-        {/* RIGHT */}
-        <div className="flex items-center gap-3">
-
-          {/* DESKTOP LANG */}
-          <div className="hidden lg:block">
-            <LanguageSwitcher />
-          </div>
-
-
-          <button
-            onClick={() => setOpen(!open)}
-            className="lg:hidden block text-black p-2 rounded-lg hover:bg-white/10 transition"
-          >
-            {open ? <X size={22} /> : <Menu size={22} />}
-          </button>
+        <div className="hidden items-center gap-7 xl:flex">
+          <LanguageSwitcher />
+          <a href={site.phone.tel} className="btn btn-primary !px-4 !py-2.5 text-sm whitespace-nowrap">
+            {site.phone.display}
+          </a>
         </div>
+
+        {/* MOBİL */}
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+          className="flex items-center gap-2.5 py-2 text-sm font-semibold text-ink xl:hidden"
+        >
+          {open ? t("close") : t("menu")}
+          <span aria-hidden className="relative block h-2.5 w-5">
+            <span
+              className={`absolute left-0 h-px w-5 bg-ink transition-transform duration-300 ${
+                open ? "top-1/2 rotate-45" : "top-0"
+              }`}
+            />
+            <span
+              className={`absolute left-0 h-px w-5 bg-ink transition-transform duration-300 ${
+                open ? "top-1/2 -rotate-45" : "bottom-0"
+              }`}
+            />
+          </span>
+        </button>
       </div>
 
-      {/* MOBILE MENU */}
-      {open && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-footer border-t border-white/10 p-4">
-
-          <div className=" flex flex-col gap-4  border-white/10">
-
-            <nav className="flex flex-col gap-3">
-              {['home', 'about', 'services', 'contact'].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item}`}
-                  onClick={() => setOpen(false)}
-                  className="text-base text-white hover:text-white/80 transition font-medium"
-                >
-                  {t(item)}
-                </a>
+      {/* MOBİL MENÜ */}
+      <div
+        id="mobile-menu"
+        hidden={!open}
+        className="h-[calc(100dvh-var(--header-height))] overflow-y-auto border-t border-line bg-paper xl:hidden"
+      >
+        <div className="container-site flex min-h-full flex-col py-8">
+          <nav aria-label={t("menuLabel")}>
+            <ol>
+              {navItems.map((item, i) => (
+                <li key={item} className="border-b border-line">
+                  <a
+                    href={`#${sectionIds[item]}`}
+                    onClick={() => setOpen(false)}
+                    className="flex items-baseline gap-4 py-4"
+                  >
+                    <span className="text-xs font-semibold text-rose-700 tabular-nums">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-serif text-3xl text-ink">{t(item)}</span>
+                  </a>
+                </li>
               ))}
-            </nav>
+            </ol>
+          </nav>
 
-            {/* MOBILE LANG */}
-            <div className="pt-2 border-t border-white/10">
-              <LanguageSwitcher />
-            </div>
+          <div className="mt-auto pt-10">
+            <p className="text-sm text-ink-soft">{t("callUs")}</p>
+            <a href={site.phone.tel} className="mt-1 block font-serif text-3xl text-ink">
+              {site.phone.display}
+            </a>
+            <a
+              href={site.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-line mt-3 inline-block text-sm font-semibold"
+            >
+              WhatsApp
+            </a>
+            <LanguageSwitcher className="mt-8" />
           </div>
         </div>
-      )}
+      </div>
     </header>
-  );
-}
-
-
-
-
-function LanguageSwitcher() {
-  const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
-
-  function changeLocale(next: string) {
-    const segments = pathname.split('/');
-    segments[1] = next;
-    router.push(segments.join('/'));
-  }
-
-  return (
-    <div className="relative flex items-center gap-1 w-fit rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-sm text-black hover:bg-white/10 transition">
-
-
-      <button
-        onClick={() => changeLocale('tr')}
-        className={`px-2 py-0.5 rounded-md transition ${locale === 'tr'
-          ? 'bg-footer text-white'
-          : 'hover:text-accent'
-          }`}
-      >
-        TR
-      </button>
-
-      <span className="text-black/30">|</span>
-
-      <button
-        onClick={() => changeLocale('en')}
-        className={`px-2 py-0.5 rounded-md transition ${locale === 'en'
-          ? 'bg-footer text-white'
-          : 'hover:text-accent'
-          }`}
-      >
-        EN
-      </button>
-
-      <span className="text-black/30">|</span>
-
-      <button
-        onClick={() => changeLocale('es')}
-        className={`px-2 py-0.5 rounded-md transition ${locale === 'es'
-          ? 'bg-footer text-white'
-          : 'hover:text-accent'
-          }`}
-      >
-        ES
-      </button>
-    </div>
   );
 }

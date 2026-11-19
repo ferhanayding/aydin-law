@@ -1,15 +1,12 @@
-
 import type { Metadata } from "next";
 import "./globals.css";
+import { site } from "@/lib/site";
+
 export const metadata: Metadata = {
-  title: "Aydin Law",
-  description: "Aydin Law is a law firm specializing in personal injury cases. We are dedicated to helping our clients get the compensation they deserve.",
+  metadataBase: new URL(site.url),
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+// Asıl <html>/<body> ve sayfa metadata'sı app/[locale]/layout.tsx içinde tanımlanır.
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return children;
 }

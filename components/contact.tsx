@@ -1,126 +1,75 @@
-'use client';
-
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
+import { ArrowUpRight } from "lucide-react";
+import SectionLabel from "./section-label";
+import ContactForm from "./contact-form";
+import { site } from "@/lib/site";
 
 export default function Contact() {
-  const t = useTranslations('contact');
+  const t = useTranslations("contact");
 
-  return (<section
-    id="contact"
-    className="py-24 bg-white"
-  > <div className="container-custom px-5 sm:px-8 lg:px-0">
+  const rows = [
+    { label: "WhatsApp", value: t("whatsappValue"), href: site.whatsapp, external: true },
+    { label: t("email"), value: site.email, href: `mailto:${site.email}` },
+    { label: t("location"), value: t("locationValue") },
+  ];
 
-      ```
-      {/* HEADER */}
-      <div className="max-w-3xl mx-auto text-center mb-16">
-        <span className="text-sm uppercase tracking-[0.3em] text-[rgb(var(--color-accent))] font-semibold">
-          {t('badge')}
-        </span>
+  return (
+    <section id="contact" aria-labelledby="contact-title" className="section-y bg-rose-900 text-white">
+      <div className="container-site grid gap-16 lg:grid-cols-12">
+        {/* BİLGİLER */}
+        <div className="lg:col-span-5">
+          <SectionLabel index="04" tone="light">
+            {t("label")}
+          </SectionLabel>
+          <h2 id="contact-title" className="mt-6 text-4xl leading-[1.08] sm:text-5xl lg:text-[3.5rem]">
+            {t("title")}
+          </h2>
+          <p className="mt-6 max-w-md text-lg leading-relaxed text-rose-100/80">{t("text")}</p>
 
-        <h2 className="mt-4 text-4xl md:text-5xl font-bold text-footer">
-          {t('title')}
-        </h2>
+          <div className="mt-12">
+            <p className="text-sm text-rose-100/70">{t("phone")}</p>
+            <a
+              href={site.phone.tel}
+              className="mt-1 inline-block font-serif text-4xl text-white transition-colors hover:text-rose-200 sm:text-5xl"
+            >
+              {site.phone.display}
+            </a>
+          </div>
 
-        <p className="mt-6 text-gray-600 leading-relaxed">
-          {t('subtitle')}
-        </p>
-      </div>
+          <dl className="mt-10 divide-y divide-white/15 border-y border-white/15">
+            {rows.map(({ label, value, href, external }) => (
+              <div key={label} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4">
+                <dt className="text-sm text-rose-100/70">{label}</dt>
+                <dd className="min-w-0 break-all sm:break-normal">
+                  {href ? (
+                    <a
+                      href={href}
+                      className="inline-flex items-center gap-1 font-semibold text-white underline decoration-white/30 underline-offset-4 transition-colors hover:decoration-white"
+                      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                    >
+                      {value}
+                      {external && <ArrowUpRight className="h-4 w-4" aria-hidden />}
+                    </a>
+                  ) : (
+                    <span className="font-semibold">{value}</span>
+                  )}
+                </dd>
+              </div>
+            ))}
+          </dl>
 
-      {/* CONTENT */}
-      <div className="grid lg:grid-cols-2 gap-12">
+          <p className="mt-8 max-w-md text-sm leading-relaxed text-rose-100/60">{t("note")}</p>
+        </div>
 
-        {/* LEFT */}
-        <div className="bg-gray-50 rounded-3xl p-8 md:p-10">
-          <h3 className="text-2xl font-semibold text-footer mb-6">
-            {t('infoTitle')}
-          </h3>
-
-          <div className="space-y-8">
-
-            <div>
-              <p className="text-sm text-gray-500 mb-1">
-                {t('phone')}
-              </p>
-
-              <a
-                href="tel:+905392669629"
-                className="text-lg font-medium text-footer hover:text-[rgb(var(--color-accent))]"
-              >
-                +90 539 266 96 29
-              </a>
-            </div>
-
-            <div>
-              <p className="text-sm text-gray-500 mb-1">
-                {t('email')}
-              </p>
-
-              <a
-                href="mailto:atty.iremaydin@gmail.com"
-                className="text-lg font-medium text-footer hover:text-[rgb(var(--color-accent))]"
-              >
-                atty.iremaydin@gmail.com
-              </a>
-            </div>
-
-            <div>
-              <p className="text-sm text-gray-500 mb-1">
-                {t('location')}
-              </p>
-
-              <p className="text-lg font-medium text-footer">
-                Ankara, Türkiye
-              </p>
-            </div>
+        {/* FORM */}
+        <div className="lg:col-span-6 lg:col-start-7">
+          <div className="border border-white/15 p-7 sm:p-10">
+            <h3 className="text-3xl">{t("form.title")}</h3>
+            <p className="mt-3 text-rose-100/75">{t("form.text")}</p>
+            <ContactForm />
           </div>
         </div>
-
-        {/* RIGHT */}
-        <div className="bg-footer text-white rounded-3xl p-8 md:p-10 flex flex-col justify-center">
-
-          <span className="text-sm uppercase tracking-[0.3em] text-white/70">
-            {t('company')}
-          </span>
-
-          <h3 className="text-3xl font-bold mt-4 mb-6">
-            {t('ctaTitle')}
-          </h3>
-
-          <p className="text-white/80 leading-relaxed mb-8">
-            {t('ctaText')}
-          </p>
-
-          <a
-            href="https://wa.me/905392669629"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-            inline-flex
-            items-center
-            justify-center
-            bg-[rgb(var(--color-accent))]
-            px-8
-            py-4
-            rounded-full
-            font-semibold
-            hover:scale-105
-            transition-all
-            w-fit
-          "
-          >
-            {t('button')}
-          </a>
-
-          <p className="mt-6 text-sm text-white/60">
-            {t('note')}
-          </p>
-
-        </div>
-
       </div>
-    </div>
-  </section>
-
-
+    </section>
   );
 }
